@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>INNER CONCRETE — Editionen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=57" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="index.html"><span class="mark-symbol">I</span><b>INNER&nbsp;CONCRETE</b></a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="buch.html">Das Buch</a><a href="meditationen.html">Meditationen</a><a href="gedanken.html">Gedanken</a><a class="active" href="shop.html">Shop</a></div>
+      <div class="nav-action"><span class="nav-note">Launch Edition</span><a class="pill" href="buch.html">Zum Buch</a></div>
+    </div>
+    <details class="nav-dropdown">
+      <summary>Menü</summary>
+      <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="buch.html">Das Buch</a>
+        <a href="meditationen.html">Meditationen</a>
+        <a href="gedanken.html">Gedanken</a>
+        <a href="shop.html">Shop</a>
+      </div>
+    </details>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div><div class="eyebrow">Shop · Kuratierte Editionen</div><h1>Wenige Objekte. <em>Keine laute Produktwelt.</em></h1></div>
+      <p>Der Shop wird als ruhige Erweiterung des Werkes positioniert: Buch, Journal, Audio und wenige Editionen mit Haltung.</p>
+    </section>
+
+    <section class="section">
+      <div class="shop-grid">
+        <article class="shop-card featured"><div><div class="object"></div><h3>Das Buch</h3><p>Die erste Ausgabe von INNER CONCRETE: 12 Spuren, 60 Phasen, 240 Impulse.</p></div><span class="card-tag">Vorbestellung · bald</span></article>
+        <article class="shop-card"><div><div class="object"></div><h3>Journal</h3><p>Ein stilles Arbeitsbuch für Riss, Tritt und Stein im Alltag.</p></div><span class="card-tag">Coming soon</span></article>
+        <article class="shop-card"><div><div class="object"></div><h3>Audio Edition</h3><p>Geführte Stille, Tagesimpulse und kurze Rückkehr-Momente.</p></div><span class="card-tag">Digital</span></article>
+        <article class="shop-card"><div><div class="object"></div><h3>Prints</h3><p>Reduzierte Textobjekte für Räume, in denen weniger mehr sagt.</p></div><span class="card-tag">Edition I</span></article>
+        <article class="shop-card"><div><div class="object"></div><h3>Concrete Set</h3><p>Buch, Journal und Audio als erstes zusammenhängendes Werkset.</p></div><span class="card-tag">Launch Bundle</span></article>
+        <article class="shop-card"><div><div class="object"></div><h3>Private Drop</h3><p>Kleine Auflagen statt permanenter Merch-Fläche.</p></div><span class="card-tag">Limited</span></article>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="intro-grid">
+        <div class="lead-text"><p>Der Shop verkauft nicht Lautstärke. Er macht das Werk greifbar.</p></div>
+        <div class="body-text"><p>Damit bleibt INNER CONCRETE hochwertig: keine rabattige Kachelwelt, sondern eine Editionen-Seite mit bewusstem Rhythmus, klaren Objekten und genügend Stille zwischen den Angeboten.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="ft-grid">
+      <div><div class="ft-mark">INNER<br>CONCRETE<em>Stille Stärke</em></div><p>Eine Gegenbewegung zum pausenlosen Funktionieren. Als Buch, Audio-Praxis und ruhige Objektwelt.</p></div>
+      <div class="ft-col"><h5>Plattform</h5><a href="index.html">Home</a><a href="buch.html">Das Buch</a><a href="meditationen.html">Meditationen</a><a href="gedanken.html">Gedanken</a></div>
+      <div class="ft-col"><h5>Werk</h5><a href="buch.html#aufbau">Aufbau</a><a href="buch.html#spuren">12 Spuren</a><a href="buch.html#leseprobe">Leseprobe</a><a href="shop.html">Editionen</a></div>
+      <div class="ft-col"><h5>Kontakt</h5><a href="#">Über Inner Concrete</a><a href="#">Kontakt</a><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+    <div class="ft-bottom"><span>© 2026 INNER CONCRETE</span><span>Riss · Tritt · Stein</span><span>Stille Stärke im Lärm</span></div>
+  </footer>
+
+  <script>
+    (() => {
+      const animatedBlocks = [
+        ...document.querySelectorAll('.page-hero, .section-head, .intro-grid, .product, .cta-block')
+      ];
+      const revealItems = [
+        ...document.querySelectorAll('.system-card, .spur-card, .book-page, .shop-card, .audio-card, .article-link, .article-list article')
+      ];
+      animatedBlocks.forEach((block) => block.classList.add('ic-animated'));
+      revealItems.forEach((item) => item.classList.add('ic-reveal-item'));
+
+      const updateSubpageProgress = () => {
+        const viewport = window.innerHeight || 1;
+        const y = window.scrollY || 0;
+        document.documentElement.style.setProperty('--scroll-y', y * 0.02 + 'px');
+        [...animatedBlocks, ...revealItems].forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          const raw = (viewport - rect.top) / (viewport + rect.height);
+          const progress = Math.min(1, Math.max(0, raw));
+          element.style.setProperty('--scene-shift', `${(progress - 0.5) * 38}px`);
+          element.classList.toggle('step-1', progress > 0.08);
+          element.classList.toggle('step-2', progress > 0.22);
+          element.classList.toggle('step-3', progress > 0.38);
+          element.classList.toggle('step-4', progress > 0.56);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle('is-visible', entry.isIntersecting);
+        });
+      }, { threshold: 0.18 });
+
+      [...animatedBlocks, ...revealItems].forEach((element) => observer.observe(element));
+      window.addEventListener('scroll', () => requestAnimationFrame(updateSubpageProgress), { passive: true });
+      window.addEventListener('resize', updateSubpageProgress);
+      updateSubpageProgress();
+    })();
+  </script>
+</body>
+</html>

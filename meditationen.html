@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>INNER CONCRETE — Meditationen</title>
+  <meta name="description" content="Kurze Meditationen zu den 12 Spuren von INNER CONCRETE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=57" />
+</head>
+<body class="meditation-frame-page">
+  <div class="meditation-frame-stage" aria-hidden="true" data-frame-count="240">
+    <img id="meditationFrame" src="assets/meditation-frames/frame-001.jpg" alt="" decoding="async" fetchpriority="high" />
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="index.html"><span class="mark-symbol">I</span><b>INNER&nbsp;CONCRETE</b></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="buch.html">Das Buch</a>
+        <a class="active" href="meditationen.html">Meditationen</a>
+        <a href="gedanken.html">Gedanken</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <div class="nav-action"><span class="nav-note">12 Spuren · 12 Meditationen</span><a class="pill" href="#spuren-audio">Hören</a></div>
+    </div>
+    <details class="nav-dropdown">
+      <summary>Menü</summary>
+      <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="buch.html">Das Buch</a>
+        <a href="meditationen.html">Meditationen</a>
+        <a href="gedanken.html">Gedanken</a>
+        <a href="shop.html">Shop</a>
+      </div>
+    </details>
+  </nav>
+
+  <aside class="index-dna meditation-dna" aria-label="Meditationen-Navigation">
+    <a class="active" href="#meditation-entry" data-dna-target="meditation-entry"><span>00</span><b>Eintritt</b></a>
+    <a href="#meditation-orientation" data-dna-target="meditation-orientation"><span>01</span><b>Orientierung</b></a>
+    <a href="#spuren-audio" data-dna-target="spuren-audio"><span>02</span><b>Player</b></a>
+  </aside>
+
+  <main>
+    <section class="meditation-scene is-visible" id="meditation-entry" data-scene="entry">
+      <div class="meditation-scene-copy">
+        <div class="scene-index">00 · Meditationen</div>
+        <h1 class="meditation-scene-title">Zurück<br>in die<br><em>Stille.</em></h1>
+        <p class="meditation-scene-lede">Wähle eine Spur. Starte ruhig. Mehr muss diese Seite nicht erklären.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#spuren-audio">Direkt zum Player</a>
+          <a class="btn secondary" href="#meditation-orientation">Kurz orientieren</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="meditation-scene" id="meditation-orientation" data-scene="orientation">
+      <div class="meditation-scene-copy meditation-scene-copy-narrow">
+        <div class="scene-index">01 · Orientierung</div>
+        <h2 class="meditation-scene-title">Kurz<br>ankommen.</h2>
+        <p class="meditation-scene-lede">Atem. Gewicht. Boden. Stimme. Ein klarer Punkt, an dem du wieder bei dir landest.</p>
+      </div>
+    </section>
+
+    <section class="meditation-scene meditation-player-scene" id="spuren-audio" data-scene="player">
+      <div class="meditation-player-shell">
+        <div class="meditation-scene-copy meditation-player-copy">
+          <div class="scene-index">02 · Audio</div>
+          <h2 class="meditation-scene-title">Wähle<br>deine Spur.</h2>
+          <p class="meditation-scene-lede">Alle Meditationen folgen der inneren Ordnung des Buchs. Erst Spur wählen, dann hören.</p>
+        </div>
+
+        <div id="player-bar" class="inline-track-player visible" aria-label="Meditationsplayer">
+          <div class="player-info">
+            <label class="track-select-label" for="track-select">Spur wählen</label>
+            <select class="track-select" id="track-select" aria-label="Spur auswählen">
+              <option value="" selected>Aus Liste wählen</option>
+              <option value="0">Spur 01 · Überleben</option>
+              <option value="1">Spur 02 · Leere</option>
+              <option value="2">Spur 03 · Druck</option>
+              <option value="3">Spur 04 · Risse</option>
+              <option value="4">Spur 05 · Loslassen</option>
+              <option value="5">Spur 06 · Grenzen</option>
+              <option value="6">Spur 07 · Verbindung</option>
+              <option value="7">Spur 08 · Präsenz</option>
+              <option value="8">Spur 09 · Würde</option>
+              <option value="9">Spur 10 · Klarheit</option>
+              <option value="10">Spur 11 · Stabilität</option>
+              <option value="11">Spur 12 · Rückkehr</option>
+            </select>
+            <span class="player-spur" id="player-spur">Noch keine Spur gewählt</span>
+            <span class="player-title" id="player-title">Wähle eine Meditation aus der Liste.</span>
+          </div>
+
+          <div class="player-controls">
+            <button class="ctrl-btn" id="btn-back" title="−15s" aria-label="15 Sekunden zurück">
+              <svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/><text x="8" y="15" font-size="6" fill="currentColor" font-family="monospace">15</text></svg>
+            </button>
+            <button class="ctrl-btn play-pause" id="btn-play" aria-label="Abspielen" title="Abspielen">
+              <svg id="icon-play" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg>
+              <svg id="icon-pause" viewBox="0 0 10 12" aria-hidden="true"><rect x="0" y="0" width="3" height="12"/><rect x="6" y="0" width="3" height="12"/></svg>
+            </button>
+            <button class="ctrl-btn" id="btn-fwd" title="+15s" aria-label="15 Sekunden vor">
+              <svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/><text x="8" y="15" font-size="6" fill="currentColor" font-family="monospace">15</text></svg>
+            </button>
+          </div>
+
+          <div class="player-progress">
+            <span class="player-time" id="time-current">0:00</span>
+            <div class="progress-track" id="progress-track">
+              <div class="progress-fill" id="progress-fill"></div>
+              <div class="progress-handle" id="progress-handle"></div>
+            </div>
+            <span class="player-time right" id="time-total">0:00</span>
+          </div>
+
+          <div class="player-volume">
+            <button class="ctrl-btn" aria-label="Lautstärke">
+              <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+            </button>
+            <input class="volume-slider" id="volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Lautstärke">
+          </div>
+
+          <button class="player-close" id="btn-close" aria-label="Player zurücksetzen">
+            <svg viewBox="0 0 14 14"><path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="ft-grid">
+      <div><div class="ft-mark">INNER<br>CONCRETE<em>Stille Stärke</em></div><p>Eine Gegenbewegung zum pausenlosen Funktionieren. Als Buch, Audio-Praxis und ruhige Objektwelt.</p></div>
+      <div class="ft-col"><h5>Plattform</h5><a href="index.html">Home</a><a href="buch.html">Das Buch</a><a href="meditationen.html">Meditationen</a><a href="gedanken.html">Gedanken</a></div>
+      <div class="ft-col"><h5>Werk</h5><a href="buch.html#aufbau">Aufbau</a><a href="buch.html#spuren">12 Spuren</a><a href="buch.html#leseprobe">Leseprobe</a><a href="shop.html">Editionen</a></div>
+      <div class="ft-col"><h5>Kontakt</h5><a href="#">Über Inner Concrete</a><a href="#">Kontakt</a><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+    <div class="ft-bottom"><span>© 2026 INNER CONCRETE</span><span>Riss · Tritt · Stein</span><span>Stille Stärke im Lärm</span></div>
+  </footer>
+
+  <audio id="ic-audio" preload="none"></audio>
+
+  <script>
+    const meditationFrameStage = document.querySelector('.meditation-frame-stage');
+    const meditationFrame = document.getElementById('meditationFrame');
+    const meditationFrameCount = Number(meditationFrameStage?.dataset.frameCount || 240);
+    const meditationScenes = document.querySelectorAll('.meditation-scene');
+    const meditationDNALinks = document.querySelectorAll('.meditation-dna a');
+    let meditationCurrentFrame = 1;
+    let meditationTicking = false;
+    const meditationPreloaded = new Set();
+
+    const meditationFrameSrc = (index) => `assets/meditation-frames/frame-${String(index).padStart(3, '0')}.jpg`;
+
+    function preloadMeditationFrame(index) {
+      if (!index || index < 1 || index > meditationFrameCount || meditationPreloaded.has(index)) return;
+      meditationPreloaded.add(index);
+      const img = new Image();
+      img.src = meditationFrameSrc(index);
+    }
+
+    function warmMeditationFrames(center) {
+      [-10, -6, -3, 3, 6, 10, 18, 32].forEach((offset) => preloadMeditationFrame(center + offset));
+      preloadMeditationFrame(1);
+      preloadMeditationFrame(meditationFrameCount);
+    }
+
+    function setActiveMeditationDNA() {
+      let activeId = 'meditation-entry';
+      let bestScore = Number.POSITIVE_INFINITY;
+      meditationScenes.forEach((scene) => {
+        const rect = scene.getBoundingClientRect();
+        const score = Math.abs(rect.top - window.innerHeight * 0.34);
+        if (score < bestScore) {
+          bestScore = score;
+          activeId = scene.id;
+        }
+      });
+      meditationDNALinks.forEach((link) => link.classList.toggle('active', link.dataset.dnaTarget === activeId));
+    }
+
+    function updateMeditationExperience() {
+      const viewport = window.innerHeight || 1;
+      const y = window.scrollY || 0;
+      const maxScroll = Math.max(1, document.documentElement.scrollHeight - viewport);
+      const pageProgress = Math.min(1, Math.max(0, y / maxScroll));
+      const nextFrame = Math.min(meditationFrameCount, Math.max(1, Math.round(pageProgress * (meditationFrameCount - 1)) + 1));
+
+      document.documentElement.style.setProperty('--meditation-progress', pageProgress.toFixed(4));
+
+      if (meditationFrame && nextFrame !== meditationCurrentFrame) {
+        meditationCurrentFrame = nextFrame;
+        meditationFrame.src = meditationFrameSrc(meditationCurrentFrame);
+        warmMeditationFrames(meditationCurrentFrame);
+      }
+
+      meditationScenes.forEach((scene) => {
+        const rect = scene.getBoundingClientRect();
+        const raw = (viewport - rect.top) / (viewport + rect.height);
+        const progress = Math.min(1, Math.max(0, raw));
+        scene.style.setProperty('--scene-shift', `${(progress - 0.5) * 34}px`);
+        scene.classList.toggle('step-1', progress > 0.08);
+        scene.classList.toggle('step-2', progress > 0.22);
+        scene.classList.toggle('step-3', progress > 0.38);
+        scene.classList.toggle('step-4', progress > 0.56);
+      });
+
+      setActiveMeditationDNA();
+      meditationTicking = false;
+    }
+
+    function requestMeditationUpdate() {
+      if (!meditationTicking) {
+        meditationTicking = true;
+        requestAnimationFrame(updateMeditationExperience);
+      }
+    }
+
+    const meditationObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => entry.target.classList.toggle('is-visible', entry.isIntersecting));
+    }, { threshold: 0.34 });
+
+    meditationScenes.forEach((scene) => meditationObserver.observe(scene));
+    window.addEventListener('scroll', requestMeditationUpdate, { passive: true });
+    window.addEventListener('resize', requestMeditationUpdate);
+    warmMeditationFrames(1);
+    updateMeditationExperience();
+  </script>
+
+  <script>
+    (function () {
+      const tracks = [
+        { title:'Überleben', spur:'Spur 01 · Wenn du trotzdem aufstehst', src:'audio/spur01-ueberleben.mp3', duration:'03:19' },
+        { title:'Leere', spur:'Spur 02 · Wieder Kontakt finden', src:'audio/spur02-leere.mp3', duration:'05:40' },
+        { title:'Druck', spur:'Spur 03 · Langsam werden', src:'audio/spur03-druck.mp3', duration:'06:30' },
+        { title:'Risse', spur:'Spur 04 · Ehrlich sehen', src:'audio/spur04-risse.mp3', duration:'05:55' },
+        { title:'Loslassen', spur:'Spur 05 · Abends ablegen', src:'audio/spur05-loslassen.mp3', duration:'08:00' },
+        { title:'Grenzen', spur:'Spur 06 · Bei dir bleiben', src:'audio/spur06-grenzen.mp3', duration:'06:10' },
+        { title:'Verbindung', spur:'Spur 07 · Weich und klar', src:'audio/spur07-verbindung.mp3', duration:'07:05' },
+        { title:'Präsenz', spur:'Spur 08 · Zurück in den Moment', src:'audio/spur08-praesenz.mp3', duration:'04:38' },
+        { title:'Würde', spur:'Spur 09 · Still stehen', src:'audio/spur09-wuerde.mp3', duration:'05:25' },
+        { title:'Klarheit', spur:'Spur 10 · Weniger Gegendruck', src:'audio/spur10-klarheit.mp3', duration:'06:45' },
+        { title:'Stabilität', spur:'Spur 11 · Was dich hält', src:'audio/spur11-stabilitaet.mp3', duration:'07:20' },
+        { title:'Rückkehr', spur:'Spur 12 · Zuhause in dir', src:'audio/spur12-rueckkehr.mp3', duration:'03:00' }
+      ];
+
+      const audio       = document.getElementById('ic-audio');
+      const btnPlay     = document.getElementById('btn-play');
+      const btnBack     = document.getElementById('btn-back');
+      const btnFwd      = document.getElementById('btn-fwd');
+      const btnClose    = document.getElementById('btn-close');
+      const trackEl     = document.getElementById('progress-track');
+      const fillEl      = document.getElementById('progress-fill');
+      const handleEl    = document.getElementById('progress-handle');
+      const timeCur     = document.getElementById('time-current');
+      const timeTotal   = document.getElementById('time-total');
+      const volSlider   = document.getElementById('volume-slider');
+      const playerSpur  = document.getElementById('player-spur');
+      const playerTitle = document.getElementById('player-title');
+      const trackSelect = document.getElementById('track-select');
+      let activeIndex = null;
+
+      function fmt(s) {
+        if (!s || isNaN(s)) return '0:00';
+        const m = Math.floor(s / 60);
+        const sec = Math.floor(s % 60);
+        return m + ':' + String(sec).padStart(2, '0');
+      }
+
+      function setPlaying(playing) {
+        btnPlay.classList.toggle('is-playing', playing);
+        btnPlay.setAttribute('aria-label', playing ? 'Pausieren' : 'Abspielen');
+        btnPlay.setAttribute('title', playing ? 'Pausieren' : 'Abspielen');
+      }
+
+      function updateTimeDisplay() {
+        const duration = audio.duration;
+        if (!duration || isNaN(duration)) return;
+        const pct = (audio.currentTime / duration) * 100;
+        fillEl.style.width = pct + '%';
+        handleEl.style.left = pct + '%';
+        timeCur.textContent = fmt(audio.currentTime);
+        timeTotal.textContent = 'noch ' + fmt(Math.max(0, duration - audio.currentTime));
+      }
+
+      function loadTrack(index, shouldPlay = true) {
+        const track = tracks[index];
+        if (!track) return;
+        activeIndex = index;
+        playerSpur.textContent = track.spur;
+        playerTitle.textContent = track.title;
+        timeCur.textContent = '0:00';
+        timeTotal.textContent = track.duration ? 'noch ' + track.duration : '0:00';
+        fillEl.style.width = '0%';
+        handleEl.style.left = '0%';
+        audio.src = track.src;
+        audio.load();
+        setPlaying(false);
+        if (shouldPlay) playAudio();
+      }
+
+      function playAudio() {
+        if (!audio.src) {
+          if (trackSelect.value === '') trackSelect.value = '0';
+          loadTrack(Number(trackSelect.value || 0), false);
+        }
+        const playPromise = audio.play();
+        if (playPromise && typeof playPromise.catch === 'function') {
+          playPromise.then(() => setPlaying(true));
+          playPromise.catch(() => {
+            setPlaying(false);
+            if (activeIndex !== null) playerTitle.textContent = tracks[activeIndex].title + ' — Datei noch nicht hinterlegt';
+          });
+        }
+      }
+
+      trackSelect.addEventListener('change', function () {
+        if (this.value === '') return;
+        loadTrack(Number(this.value), true);
+      });
+
+      btnPlay.addEventListener('click', function () {
+        if (audio.paused) { playAudio(); } else { audio.pause(); }
+      });
+
+      btnBack.addEventListener('click', function () { audio.currentTime = Math.max(0, audio.currentTime - 15); });
+      btnFwd.addEventListener('click', function () { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 15); });
+
+      audio.addEventListener('play', function () { setPlaying(true); });
+      audio.addEventListener('pause', function () { setPlaying(false); });
+      audio.addEventListener('loadedmetadata', updateTimeDisplay);
+      audio.addEventListener('durationchange', updateTimeDisplay);
+      audio.addEventListener('timeupdate', updateTimeDisplay);
+      audio.addEventListener('ended', function () {
+        setPlaying(false);
+        fillEl.style.width = '100%';
+        handleEl.style.left = '100%';
+        timeCur.textContent = fmt(audio.duration);
+        timeTotal.textContent = 'noch 0:00';
+      });
+      audio.addEventListener('error', function () {
+        setPlaying(false);
+        if (activeIndex !== null) playerTitle.textContent = tracks[activeIndex].title + ' — Datei noch nicht hinterlegt';
+      });
+
+      trackEl.addEventListener('click', function (e) {
+        if (!audio.duration) return;
+        const rect = trackEl.getBoundingClientRect();
+        const pct = (e.clientX - rect.left) / rect.width;
+        audio.currentTime = pct * audio.duration;
+      });
+
+      volSlider.addEventListener('input', function () {
+        audio.volume = parseFloat(volSlider.value);
+      });
+
+      btnClose.addEventListener('click', function () {
+        audio.pause();
+        audio.removeAttribute('src');
+        audio.load();
+        activeIndex = null;
+        trackSelect.value = '';
+        playerSpur.textContent = 'Noch keine Spur gewählt';
+        playerTitle.textContent = 'Wähle eine Meditation aus der Liste.';
+        timeCur.textContent = '0:00';
+        timeTotal.textContent = '0:00';
+        fillEl.style.width = '0%';
+        handleEl.style.left = '0%';
+        setPlaying(false);
+      });
+    })();
+  </script>
+</body>
+</html>
