@@ -8,11 +8,6 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-# ensure public contains root static files so Next serves them
-RUN mkdir -p public \
-  && cp -a index.html buch.html meditationen.html gedanken.html shop.html public/ 2>/dev/null || true \
-  && cp -a styles.css public/ 2>/dev/null || true \
-  && cp -a assets public/ 2>/dev/null || true
 RUN npm run build
 
 FROM node:20-alpine AS runner
