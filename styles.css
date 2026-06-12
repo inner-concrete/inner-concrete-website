@@ -3906,6 +3906,133 @@ keine abgeschnittenen Textspalten.
 }
 
 /* =====================================================
+   GEDANKEN — READABILITY REPAIR v60
+   Keeps thought content above overlays on desktop and mobile.
+   ===================================================== */
+.thought-frame-page::before{
+  z-index:6;
+  opacity:.06 !important;
+  mix-blend-mode:screen !important;
+  background-image:radial-gradient(rgba(244,240,232,.14) .45px,transparent .72px) !important;
+}
+
+.thought-frame-page .thought-scene::before{
+  z-index:0 !important;
+  background:
+    linear-gradient(90deg,rgba(7,8,8,.56),rgba(7,8,8,.28) 50%,rgba(7,8,8,.48)),
+    linear-gradient(180deg,rgba(7,8,8,.08),rgba(7,8,8,.22)) !important;
+}
+
+.thought-frame-page .thought-scene::after{
+  z-index:1 !important;
+}
+
+.thought-frame-page .thought-scene > *{
+  position:relative;
+  z-index:5 !important;
+}
+
+.thought-frame-page .thought-copy{
+  position:relative;
+  z-index:5 !important;
+  padding:clamp(22px,2.5vw,34px) clamp(22px,2.8vw,38px);
+  border:1px solid rgba(244,240,232,.15);
+  color:#f8f3e8 !important;
+  background:
+    linear-gradient(135deg,rgba(244,240,232,.075),rgba(244,240,232,.026)),
+    linear-gradient(135deg,rgba(7,8,8,.36),rgba(7,8,8,.16));
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  box-shadow:0 24px 70px rgba(0,0,0,.28);
+  mix-blend-mode:normal !important;
+  opacity:1 !important;
+}
+
+.thought-frame-page .thought-copy > *,
+.thought-frame-page .scene-title,
+.thought-frame-page .scene-title em,
+.thought-frame-page .scene-lede,
+.thought-frame-page .scene-actions{
+  opacity:1 !important;
+  transform:none !important;
+  clip-path:none !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+
+.thought-frame-page .scene-title{
+  color:#f8f3e8 !important;
+  -webkit-text-fill-color:#f8f3e8 !important;
+  text-shadow:0 16px 46px rgba(0,0,0,.42);
+}
+
+.thought-frame-page .scene-title em{
+  color:#d7c8bb !important;
+  -webkit-text-fill-color:#d7c8bb !important;
+}
+
+.thought-frame-page .scene-lede,
+.thought-side-note p{
+  color:#eee6da !important;
+  -webkit-text-fill-color:#eee6da !important;
+}
+
+.thought-side-note,
+.thought-fragments-grid,
+.thought-topics-panel,
+.thought-archive-list,
+.thought-letter-card{
+  position:relative;
+  z-index:5 !important;
+}
+
+.thought-side-note,
+.thought-fragment-card,
+.topic-tile,
+.thought-archive-item,
+.thought-letter-card{
+  color:#f8f3e8 !important;
+  background:
+    linear-gradient(145deg,rgba(244,240,232,.085),rgba(244,240,232,.028)),
+    rgba(7,8,8,.38) !important;
+  border-color:rgba(244,240,232,.18) !important;
+  box-shadow:0 20px 58px rgba(0,0,0,.30) !important;
+  opacity:1 !important;
+  mix-blend-mode:normal !important;
+}
+
+.thought-fragment-card h3,
+.topic-tile h3,
+.thought-archive-item h3{
+  color:#f8f3e8 !important;
+  -webkit-text-fill-color:#f8f3e8 !important;
+  opacity:1 !important;
+}
+
+.thought-fragment-card p,
+.topic-tile p,
+.thought-archive-item p,
+.archive-meta,
+.fragment-kicker,
+.topic-tile span{
+  color:#e8ded1 !important;
+  -webkit-text-fill-color:#e8ded1 !important;
+  opacity:1 !important;
+}
+
+.thought-archive-item b{
+  color:#f8f3e8 !important;
+  -webkit-text-fill-color:#f8f3e8 !important;
+  opacity:1 !important;
+}
+
+.thought-letter-card{
+  opacity:1 !important;
+  transform:none !important;
+  clip-path:none !important;
+}
+
+/* =====================================================
    MOBILE REPAIR v58
    Keeps late page-specific patches from squeezing or dimming mobile views.
    ===================================================== */
