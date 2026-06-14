@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=60" />
+  <link rel="stylesheet" href="styles.css?v=62" />
 </head>
 <body class="thought-frame-page">
-  <div class="thought-frame-stage" aria-hidden="true">
+  <div class="thought-frame-stage" aria-hidden="true" data-frame-count="240">
+    <img id="thoughtFrame" src="assets/gedanken/frames/ezgif-frame-001.jpg" alt="" decoding="async" fetchpriority="high" />
     <div class="thought-room">
       <div class="thought-vignette"></div>
       <div class="thought-beam beam-a"></div>
@@ -56,127 +57,162 @@
 
   <aside class="index-dna thought-dna" aria-label="Gedanken Navigation">
     <a class="active" href="#gedanken" data-dna-target="gedanken"><span>00</span><b>Gedanken</b></a>
-    <a href="#fragmente" data-dna-target="fragmente"><span>01</span><b>Fragmente</b></a>
-    <a href="#themen" data-dna-target="themen"><span>02</span><b>Themen</b></a>
-    <a href="#archiv" data-dna-target="archiv"><span>03</span><b>Archiv</b></a>
-    <a href="#brief" data-dna-target="brief"><span>04</span><b>Brief</b></a>
+    <a href="#themen" data-dna-target="themen"><span>01</span><b>Räume</b></a>
+    <a href="#archiv" data-dna-target="archiv"><span>02</span><b>Archiv</b></a>
   </aside>
 
   <main>
     <section class="scroll-scene dark-scene thought-scene thought-hero is-visible" id="gedanken" data-scene="gedanken">
-      <div class="scene-copy thought-copy">
+      <div class="scene-copy thought-copy thought-hero-copy">
         <div class="scene-index">00 · Gedanken</div>
-        <h1 class="scene-title">Texte, die nicht lauter werden. <em>Sondern klarer.</em></h1>
-        <p class="scene-lede">Ein stiller Archivraum für Druck, Würde, Grenzen, Stille und Rückkehr. Weniger Blog. Mehr Haltung.</p>
+        <h1 class="scene-title thought-hero-title">
+          <span>TEXTE ÜBER DAS,</span>
+          <span>WAS MENSCHEN</span>
+          <em>TRAGEN.</em>
+        </h1>
+        <p class="scene-lede thought-hero-subline">Nicht darüber,<br>wie man schneller wird.<br><br>Sondern wie man klarer wird.</p>
         <div class="scene-actions">
-          <a class="scene-link" href="#archiv">Archiv öffnen</a>
-          <a class="scene-link" href="#brief">Brief bekommen</a>
+          <a class="scene-link" href="#archiv">Archiv betreten</a>
         </div>
       </div>
-      <div class="thought-side-note">
-        <span>Archivraum</span>
-        <p>Fragmente. Notizen. Essays. Kein Feed. Kein Lärm.</p>
+    </section>
+
+    <section class="scroll-scene dark-scene thought-scene thought-themes-scene" id="themen" data-scene="themen">
+      <div class="thought-section-intro">
+        <div class="scene-index">01 · Themenräume</div>
+        <h2 class="scene-title thought-section-title">
+          <span>ORIENTIERUNG</span>
+          <em>IN THEMENRÄUMEN.</em>
+        </h2>
+        <p class="scene-lede">Nicht Kategorien. Keine Rubriken. Sondern Felder, in denen Menschen sich selbst wiederfinden, verlieren, verteidigen und zurückholen.</p>
+      </div>
+      <div class="thought-theme-rooms">
+        <article class="thought-theme-room">
+          <div class="thought-theme-room-meta">
+            <span>Druck</span>
+            <b>12 Texte</b>
+          </div>
+          <div class="thought-theme-room-copy">
+            <h3>DRUCK</h3>
+            <p>Wenn Leistung zur Tarnung wird.</p>
+          </div>
+          <a class="scene-link" href="#archiv">Themenraum öffnen</a>
+        </article>
+        <article class="thought-theme-room">
+          <div class="thought-theme-room-meta">
+            <span>Würde</span>
+            <b>8 Texte</b>
+          </div>
+          <div class="thought-theme-room-copy">
+            <h3>WÜRDE</h3>
+            <p>Was bleibt, wenn du nichts mehr beweisen musst.</p>
+          </div>
+          <a class="scene-link" href="#archiv">Themenraum öffnen</a>
+        </article>
+        <article class="thought-theme-room">
+          <div class="thought-theme-room-meta">
+            <span>Grenzen</span>
+            <b>7 Texte</b>
+          </div>
+          <div class="thought-theme-room-copy">
+            <h3>GRENZEN</h3>
+            <p>Klarheit ohne Rechtfertigung.</p>
+          </div>
+          <a class="scene-link" href="#archiv">Themenraum öffnen</a>
+        </article>
+        <article class="thought-theme-room">
+          <div class="thought-theme-room-meta">
+            <span>Stille</span>
+            <b>15 Texte</b>
+          </div>
+          <div class="thought-theme-room-copy">
+            <h3>STILLE</h3>
+            <p>Nicht Rückzug. Kontakt.</p>
+          </div>
+          <a class="scene-link" href="#archiv">Themenraum öffnen</a>
+        </article>
+        <article class="thought-theme-room">
+          <div class="thought-theme-room-meta">
+            <span>Rückkehr</span>
+            <b>10 Texte</b>
+          </div>
+          <div class="thought-theme-room-copy">
+            <h3>RÜCKKEHR</h3>
+            <p>Wieder bei dir landen.</p>
+          </div>
+          <a class="scene-link" href="#archiv">Themenraum öffnen</a>
+        </article>
       </div>
     </section>
 
-    <section class="scroll-scene dark-scene thought-scene" id="fragmente" data-scene="fragmente">
-      <div class="scene-copy thought-copy thought-copy-narrow">
-        <div class="scene-index">01 · Fragmente</div>
-        <h2 class="scene-title">Kurze Sätze. <em>Volle Reibung.</em></h2>
-        <p class="scene-lede">Gedanken, die nicht erklären wollen. Eher markieren, wo etwas in dir schon da ist.</p>
-      </div>
-      <div class="thought-fragments-grid">
-        <article class="thought-fragment-card">
-          <div class="fragment-kicker">Stille · 01</div>
-          <h3>Nicht alles, was still ist, ist leer.</h3>
-          <p>Manches ist endlich nur nicht mehr übertönt.</p>
-        </article>
-        <article class="thought-fragment-card">
-          <div class="fragment-kicker">Druck · 02</div>
-          <h3>Funktionieren ist nicht immer Stabilität.</h3>
-          <p>Manchmal nur Gewohnheit mit gutem Timing.</p>
-        </article>
-        <article class="thought-fragment-card">
-          <div class="fragment-kicker">Grenzen · 03</div>
-          <h3>Ein Nein kann sauberer sein als ein Kompromiss.</h3>
-          <p>Vor allem dann, wenn du dich darin nicht verlierst.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="scroll-scene dark-scene thought-scene" id="themen" data-scene="themen">
-      <div class="scene-copy thought-copy">
-        <div class="scene-index">02 · Themen</div>
-        <h2 class="scene-title">Fünf Felder. <em>Ein inneres Gelände.</em></h2>
-        <p class="scene-lede">Die Texte gruppieren sich nicht nach Content-Kategorien, sondern nach den Spannungen, in denen wir leben.</p>
-      </div>
-      <div class="thought-topics-panel">
-        <article class="topic-tile"><span>01</span><h3>Druck</h3><p>Wenn Leistung zur Tarnung wird.</p></article>
-        <article class="topic-tile"><span>02</span><h3>Würde</h3><p>Was bleibt, wenn du dich nicht mehr beweisen willst.</p></article>
-        <article class="topic-tile"><span>03</span><h3>Grenzen</h3><p>Klarheit ohne Rechtfertigungsbedarf.</p></article>
-        <article class="topic-tile"><span>04</span><h3>Stille</h3><p>Nicht Rückzug, sondern Kontakt.</p></article>
-        <article class="topic-tile"><span>05</span><h3>Rückkehr</h3><p>Wieder bei dir landen, ohne Szene daraus zu machen.</p></article>
-      </div>
-    </section>
-
-    <section class="scroll-scene dark-scene thought-scene" id="archiv" data-scene="archiv">
-      <div class="scene-copy thought-copy">
-        <div class="scene-index">03 · Archiv</div>
-        <h2 class="scene-title">Archiv. <em>Nicht Content.</em></h2>
-        <p class="scene-lede">Ein geordneter Bestand aus Gedanken, Essays und Fragmenten. Leise aufgebaut. Jederzeit erweiterbar.</p>
+    <section class="scroll-scene dark-scene thought-scene thought-archive-scene" id="archiv" data-scene="archiv">
+      <div class="thought-section-intro">
+        <div class="scene-index">02 · Archiv</div>
+        <h2 class="scene-title thought-section-title">
+          <span>ARCHIV.</span>
+          <em>NICHT CONTENT.</em>
+        </h2>
+        <p class="scene-lede">Eine Bibliothek für Orientierung. Keine Blogkarten. Kein Magazinrhythmus. Nur Texte, die bleiben dürfen.</p>
       </div>
       <div class="thought-archive-list">
         <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Stille · Essay 01</span>
-          <div>
-            <h3>Nicht alles, was still ist, ist leer.</h3>
-            <p>Über Ruhe, die nicht Abwesenheit ist, sondern Kontakt.</p>
+          <span class="archive-meta">Stille</span>
+          <div class="thought-archive-copy">
+            <h3>Nicht alles,<br>was still ist,<br>ist leer.</h3>
+            <p>Ein Text über Ruhe, die nicht Abwesenheit ist, sondern wieder Kontakt.</p>
           </div>
-          <b>Öffnen</b>
+          <div class="thought-archive-meta-stack">
+            <span>5 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
         </a>
         <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Druck · Essay 02</span>
-          <div>
-            <h3>Wenn Funktionieren dein Zuhause wurde.</h3>
-            <p>Warum Stärke manchmal nur eine elegante Form von Erschöpfung war.</p>
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Wenn Funktionieren<br>dein Zuhause wurde.</h3>
+            <p>Warum Stärke manchmal nur eine elegante Form von Erschöpfung gewesen ist.</p>
           </div>
-          <b>Öffnen</b>
+          <div class="thought-archive-meta-stack">
+            <span>7 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
         </a>
         <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Grenzen · Essay 03</span>
-          <div>
-            <h3>Ein Nein, das aus dir kommt.</h3>
-            <p>Über Klarheit, die sich nicht rechtfertigen muss.</p>
+          <span class="archive-meta">Grenzen</span>
+          <div class="thought-archive-copy">
+            <h3>Ein Nein,<br>das aus dir kommt.</h3>
+            <p>Über Klarheit, die sich nicht erklären und nicht verhandeln muss.</p>
           </div>
-          <b>Öffnen</b>
+          <div class="thought-archive-meta-stack">
+            <span>4 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
         </a>
         <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Rückkehr · Essay 04</span>
-          <div>
-            <h3>Du brauchst nichts mehr zu werden.</h3>
-            <p>Ein Gedanke über Identität ohne Projekt dahinter.</p>
+          <span class="archive-meta">Rückkehr</span>
+          <div class="thought-archive-copy">
+            <h3>Du brauchst<br>nichts mehr<br>zu werden.</h3>
+            <p>Ein Text über Identität, Verantwortung und die Frage, wie man wieder bei sich landet.</p>
           </div>
-          <b>Öffnen</b>
+          <div class="thought-archive-meta-stack">
+            <span>6 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="#">
+          <span class="archive-meta">Mut</span>
+          <div class="thought-archive-copy">
+            <h3>Mut ist nicht laut.<br>Nur entschieden.</h3>
+            <p>Ein Text über Verantwortung, Verlust und die Form von Stärke, die nicht auftritt.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span>5 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
         </a>
       </div>
     </section>
 
-    <section class="scroll-scene dark-scene thought-scene thought-letter-scene" id="brief" data-scene="brief">
-      <div class="scene-copy thought-copy">
-        <div class="scene-index">04 · Brief</div>
-        <h2 class="scene-title">Ein Brief. <em>Nicht ständig.</em></h2>
-        <p class="scene-lede">Ab und zu ein Gedanke, ein Text oder ein kurzer Hinweis aus dem Werk. Ohne Taktungslärm.</p>
-      </div>
-      <form class="letter-card thought-letter-card" action="#" method="post">
-        <label for="thoughtEmail">Deine Adresse</label>
-        <input id="thoughtEmail" name="email" type="email" placeholder="name@beispiel.de" autocomplete="email" />
-        <button type="submit">
-          <span>Eintragen</span>
-          <svg width="54" height="14" viewBox="0 0 54 14" aria-hidden="true"><path d="M0 7h51M44 1l7 6-7 6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
-        </button>
-        <p>Kein Newsletter-Stakkato. Nur einzelne, saubere Briefe.</p>
-      </form>
-    </section>
   </main>
 
   <footer>
@@ -191,9 +227,29 @@
 
   <script>
     (() => {
+      const thoughtFrameStage = document.querySelector('.thought-frame-stage');
+      const thoughtFrame = document.getElementById('thoughtFrame');
+      const thoughtFrameCount = Number(thoughtFrameStage?.dataset.frameCount || 240);
       const scenes = [...document.querySelectorAll('.thought-scene')];
       const dnaLinks = [...document.querySelectorAll('.thought-dna a')];
       let ticking = false;
+      let currentFrame = 1;
+      const preloaded = new Set();
+
+      const thoughtFrameSrc = (index) => `assets/gedanken/frames/ezgif-frame-${String(index).padStart(3, '0')}.jpg`;
+
+      const preloadFrame = (index) => {
+        if (!index || index < 1 || index > thoughtFrameCount || preloaded.has(index)) return;
+        preloaded.add(index);
+        const img = new Image();
+        img.src = thoughtFrameSrc(index);
+      };
+
+      const warmFrames = (center) => {
+        [-10, -6, -3, 3, 6, 10, 18, 32].forEach((offset) => preloadFrame(center + offset));
+        preloadFrame(1);
+        preloadFrame(thoughtFrameCount);
+      };
 
       const setActiveDNA = () => {
         let activeId = 'gedanken';
@@ -214,8 +270,15 @@
         const y = window.scrollY || 0;
         const maxScroll = Math.max(1, document.documentElement.scrollHeight - viewport);
         const pageProgress = Math.min(1, Math.max(0, y / maxScroll));
+        const nextFrame = Math.min(thoughtFrameCount, Math.max(1, Math.round(pageProgress * (thoughtFrameCount - 1)) + 1));
         document.documentElement.style.setProperty('--scroll-y', `${y * 0.02}px`);
         document.documentElement.style.setProperty('--thought-progress', pageProgress.toFixed(4));
+
+        if (thoughtFrame && nextFrame !== currentFrame) {
+          currentFrame = nextFrame;
+          thoughtFrame.src = thoughtFrameSrc(currentFrame);
+          warmFrames(currentFrame);
+        }
 
         scenes.forEach((scene) => {
           const rect = scene.getBoundingClientRect();
@@ -248,6 +311,7 @@
       scenes.forEach((scene) => observer.observe(scene));
       window.addEventListener('scroll', onScroll, { passive: true });
       window.addEventListener('resize', updateThoughtExperience);
+      warmFrames(1);
       updateThoughtExperience();
     })();
   </script>
