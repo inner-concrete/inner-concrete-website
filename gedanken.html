@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css?v=62" />
 </head>
 <body class="thought-frame-page">
-  <div class="thought-frame-stage" aria-hidden="true" data-frame-count="240">
+  <div class="thought-frame-stage" aria-hidden="true" data-frame-count="181">
     <img id="thoughtFrame" src="assets/gedanken/frames/ezgif-frame-001.jpg" alt="" decoding="async" fetchpriority="high" />
     <div class="thought-room">
       <div class="thought-vignette"></div>
@@ -229,7 +229,7 @@
     (() => {
       const thoughtFrameStage = document.querySelector('.thought-frame-stage');
       const thoughtFrame = document.getElementById('thoughtFrame');
-      const thoughtFrameCount = Number(thoughtFrameStage?.dataset.frameCount || 240);
+      const thoughtFrameCount = Number(thoughtFrameStage?.dataset.frameCount || 181);
       const scenes = [...document.querySelectorAll('.thought-scene')];
       const dnaLinks = [...document.querySelectorAll('.thought-dna a')];
       let ticking = false;
@@ -246,7 +246,7 @@
       };
 
       const warmFrames = (center) => {
-        [-10, -6, -3, 3, 6, 10, 18, 32].forEach((offset) => preloadFrame(center + offset));
+        [-8, -5, -2, 2, 5, 8, 12, 18].forEach((offset) => preloadFrame(center + offset));
         preloadFrame(1);
         preloadFrame(thoughtFrameCount);
       };
