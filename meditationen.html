@@ -12,7 +12,7 @@
 </head>
 <body class="meditation-frame-page">
   <div class="meditation-frame-stage" aria-hidden="true" data-frame-count="240">
-    <img id="meditationFrame" src="assets/meditation-frames/frame-001.jpg" alt="" decoding="async" fetchpriority="high" />
+    <img id="meditationFrame" src="assets/meditationen/frames/frame-001.jpg" alt="" decoding="async" fetchpriority="high" />
   </div>
 
   <nav class="nav">
@@ -155,7 +155,7 @@
     let meditationTicking = false;
     const meditationPreloaded = new Set();
 
-    const meditationFrameSrc = (index) => `assets/meditation-frames/frame-${String(index).padStart(3, '0')}.jpg`;
+    const meditationFrameSrc = (index) => `assets/meditationen/frames/frame-${String(index).padStart(3, '0')}.jpg`;
 
     function preloadMeditationFrame(index) {
       if (!index || index < 1 || index > meditationFrameCount || meditationPreloaded.has(index)) return;
@@ -235,18 +235,18 @@
   <script>
     (function () {
       const tracks = [
-        { title:'Überleben', spur:'Spur 01 · Wenn du trotzdem aufstehst', src:'audio/spur01-ueberleben.mp3', duration:'03:19' },
-        { title:'Leere', spur:'Spur 02 · Wieder Kontakt finden', src:'audio/spur02-leere.mp3', duration:'05:40' },
-        { title:'Druck', spur:'Spur 03 · Langsam werden', src:'audio/spur03-druck.mp3', duration:'06:30' },
-        { title:'Risse', spur:'Spur 04 · Ehrlich sehen', src:'audio/spur04-risse.mp3', duration:'05:55' },
-        { title:'Loslassen', spur:'Spur 05 · Abends ablegen', src:'audio/spur05-loslassen.mp3', duration:'08:00' },
-        { title:'Grenzen', spur:'Spur 06 · Bei dir bleiben', src:'audio/spur06-grenzen.mp3', duration:'06:10' },
-        { title:'Verbindung', spur:'Spur 07 · Weich und klar', src:'audio/spur07-verbindung.mp3', duration:'07:05' },
-        { title:'Präsenz', spur:'Spur 08 · Zurück in den Moment', src:'audio/spur08-praesenz.mp3', duration:'04:38' },
-        { title:'Würde', spur:'Spur 09 · Still stehen', src:'audio/spur09-wuerde.mp3', duration:'05:25' },
-        { title:'Klarheit', spur:'Spur 10 · Weniger Gegendruck', src:'audio/spur10-klarheit.mp3', duration:'06:45' },
-        { title:'Stabilität', spur:'Spur 11 · Was dich hält', src:'audio/spur11-stabilitaet.mp3', duration:'07:20' },
-        { title:'Rückkehr', spur:'Spur 12 · Zuhause in dir', src:'audio/spur12-rueckkehr.mp3', duration:'03:00' }
+        { title:'Überleben', spur:'Spur 01 · Wenn du trotzdem aufstehst', src:'audio/meditationen/spur01-ueberleben.mp3', duration:'03:19' },
+        { title:'Leere', spur:'Spur 02 · Wieder Kontakt finden', src:'audio/meditationen/spur02-leere.mp3', duration:'05:40' },
+        { title:'Druck', spur:'Spur 03 · Langsam werden', src:'audio/meditationen/spur03-druck.mp3', duration:'06:30' },
+        { title:'Risse', spur:'Spur 04 · Ehrlich sehen', src:'audio/meditationen/spur04-risse.mp3', duration:'05:55' },
+        { title:'Loslassen', spur:'Spur 05 · Abends ablegen', src:'audio/meditationen/spur05-loslassen.mp3', duration:'08:00' },
+        { title:'Grenzen', spur:'Spur 06 · Bei dir bleiben', src:'audio/meditationen/spur06-grenzen.mp3', duration:'06:10' },
+        { title:'Verbindung', spur:'Spur 07 · Weich und klar', src:'audio/meditationen/spur07-verbindung.mp3', duration:'07:05' },
+        { title:'Präsenz', spur:'Spur 08 · Zurück in den Moment', src:'audio/meditationen/spur08-praesenz.mp3', duration:'04:38' },
+        { title:'Würde', spur:'Spur 09 · Still stehen', src:'audio/meditationen/spur09-wuerde.mp3', duration:'05:25' },
+        { title:'Klarheit', spur:'Spur 10 · Weniger Gegendruck', src:'audio/meditationen/spur10-klarheit.mp3', duration:'06:45' },
+        { title:'Stabilität', spur:'Spur 11 · Was dich hält', src:'audio/meditationen/spur11-stabilitaet.mp3', duration:'07:20' },
+        { title:'Rückkehr', spur:'Spur 12 · Zuhause in dir', src:'audio/meditationen/spur12-rueckkehr.mp3', duration:'03:00' }
       ];
 
       const audio       = document.getElementById('ic-audio');

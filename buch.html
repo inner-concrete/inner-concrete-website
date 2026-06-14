@@ -12,7 +12,7 @@
 </head>
 <body class="index-frame-page book-frame-page">
   <div class="index-frame-stage book-frame-stage" aria-hidden="true" data-frame-count="300">
-    <img id="bookFrame" src="assets/book-frames/book-0001.jpg" alt="" decoding="async" fetchpriority="high" />
+    <img id="bookFrame" src="assets/buch/frames/book-0001.jpg" alt="" decoding="async" fetchpriority="high" />
   </div>
 
   <nav class="nav">
@@ -229,7 +229,7 @@
     let currentBookFrame = 1;
     const preloadedBookFrames = new Set();
 
-    const bookFrameSrc = (index) => `assets/book-frames/book-${String(index).padStart(4, '0')}.jpg`;
+    const bookFrameSrc = (index) => `assets/buch/frames/book-${String(index).padStart(4, '0')}.jpg`;
 
     const preloadBookFrame = (index) => {
       if (!index || index < 1 || index > bookFrameCount || preloadedBookFrames.has(index)) return;

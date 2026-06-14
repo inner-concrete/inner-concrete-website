@@ -2,6 +2,26 @@
 
 Official website project for INNER CONCRETE.
 
+## Projektstruktur
+
+Die HTML-Seiten bleiben wegen der Live-URLs direkt im Root:
+
+- `index.html`
+- `buch.html`
+- `meditationen.html`
+- `gedanken.html`
+- `shop.html`
+- `styles.css`
+
+Assets und Medien sind nach Seitenaufbau sortiert:
+
+- `assets/index/frames` — Startseiten-Frame-Sequenz
+- `assets/index/scenes` — Startseiten-Szenenbilder
+- `assets/buch/frames` — Buch-Frame-Sequenz
+- `assets/meditationen/frames` — Meditations-Frame-Sequenz
+- `assets/shared/branding` — gemeinsame Brand- und Motivdateien
+- `audio/meditationen` — Audio-Dateien fuer die Meditationsseite
+
 ## Hetzner Deployment
 
 ### Vorbereitung auf dem Hetzner-Server
@@ -55,7 +75,7 @@ Wenn du den Dienst direkt über Port 80 erreichbar machen möchtest, ändere in 
 
 ```yaml
 ports:
-  - "80:3000"
+  - "80:80"
 ```
 
 Alternativ kannst du auf dem Server einen Reverse-Proxy wie Nginx oder Caddy vor den Container stellen.
@@ -67,7 +87,7 @@ Wenn du EasyPanel auf dem Hetzner-Server verwendest, kannst du das bestehende `d
 1. Öffne EasyPanel und erstelle ein neues Projekt vom Typ Docker Compose.
 2. Wähle das GitHub-Repository oder lade den Projektordner hoch.
 3. Stelle sicher, dass EasyPanel `docker compose` verwendet.
-4. Leite den internen Container-Port `3000` nach außen weiter, z. B. auf `80`.
+4. Leite den internen Container-Port `80` nach außen weiter, z. B. auf `80`.
 5. Starte den Service in EasyPanel.
 
 Wenn du EasyPanel einsetzt, sollte EasyPanel die primäre Container-Verwaltung übernehmen und den SSH-basierten GitHub-Workflow nur als sekundären Update-Weg verwenden.
