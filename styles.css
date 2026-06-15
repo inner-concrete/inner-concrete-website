@@ -160,13 +160,17 @@ img{display:block;max-width:100%}
   top:64px;
   left:0;
   right:0;
-  width:100vw;
+  width:100%;
   z-index:1201;
-  display:grid;
+  display:none;
   background:rgba(244,240,232,.98);
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
   box-shadow:0 18px 34px rgba(17,17,15,.12);
+}
+
+.nav-dropdown[open] .mobile-menu{
+  display:grid;
 }
 
 .mobile-menu a{
@@ -304,6 +308,7 @@ img{display:block;max-width:100%}
 .scroll-scene.step-1 .scene-index,
 .scroll-scene.step-2 .scene-title,
 .scroll-scene.step-3 .scene-lede,
+.scroll-scene.step-3 .cta-row,
 .scroll-scene.step-3 .scene-actions{
   opacity:1;
   transform:translateY(0);
@@ -3312,6 +3317,28 @@ Leseprobe kompakter.
   }
 }
 
+@media (max-width: 560px){
+.book-frame-page .index-dna.book-dna{
+    justify-content:space-between !important;
+    gap:4px !important;
+    padding:10px 12px 8px !important;
+    overflow-x:hidden !important;
+  }
+
+.book-frame-page .index-dna.book-dna a{
+    flex:1 1 0 !important;
+    min-width:0 !important;
+    grid-template-columns:1fr !important;
+    justify-items:center !important;
+    gap:4px !important;
+    padding:10px 6px !important;
+  }
+
+.book-frame-page .index-dna.book-dna a b{
+    display:none !important;
+  }
+}
+
 /* =====================================================
    BUCH — LESEPROBE EDITORIAL FIX v54
    Mehr Ruhe,
@@ -3599,6 +3626,7 @@ keine abgeschnittenen Textspalten.
    ===================================================== */
 .thought-frame-page{
   background:#080908;
+  overflow-x:clip;
 }
 
 .thought-frame-page main{
@@ -3642,6 +3670,7 @@ keine abgeschnittenen Textspalten.
   position:absolute;
   inset:0;
   z-index:2;
+  overflow:hidden;
   background:
     linear-gradient(90deg, rgba(8,9,9,.10) 0%, rgba(17,19,21,.06) 22%, rgba(30,34,38,.02) 50%, rgba(15,17,18,.06) 78%, rgba(8,9,9,.12) 100%),
     repeating-linear-gradient(90deg, rgba(255,255,255,.006) 0 1px, transparent 1px 240px),
@@ -3666,16 +3695,16 @@ keine abgeschnittenen Textspalten.
 }
 
 .thought-floor{
-  left:-5%;
-  right:-5%;
-  bottom:-4%;
-  height:38%;
+  left:4%;
+  right:4%;
+  bottom:0;
+  height:30%;
   background:
     linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0) 26%),
     linear-gradient(90deg, rgba(255,255,255,.02), transparent 22%, rgba(255,255,255,.015) 50%, transparent 77%, rgba(255,255,255,.02)),
     linear-gradient(180deg, rgba(17,20,22,.16), rgba(7,8,8,.78));
-  transform:perspective(1000px) rotateX(76deg) translateY(calc(var(--thought-progress, 0) * -18px));
-  transform-origin:center top;
+  clip-path:polygon(8% 0, 92% 0, 100% 100%, 0 100%);
+  transform:translateY(calc(var(--thought-progress, 0) * -12px));
 }
 
 .thought-column{
