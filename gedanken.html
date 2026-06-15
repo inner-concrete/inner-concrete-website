@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=62" />
+  <link rel="stylesheet" href="styles.css?v=65" />
 </head>
 <body class="thought-frame-page">
   <div class="thought-frame-stage" aria-hidden="true" data-frame-count="181">
@@ -41,7 +41,7 @@
         <a class="active" href="gedanken.html">Gedanken</a>
         <a href="shop.html">Shop</a>
       </div>
-      <div class="nav-action"><span class="nav-note">Archive · Fragmente · Essays</span><a class="pill" href="#archiv">Lesen</a></div>
+      <div class="nav-action"><span class="nav-note">Archive · Fragmente · Essays</span><a class="pill" href="#neu">Neu</a></div>
     </div>
     <details class="nav-dropdown">
       <summary>Menü</summary>
@@ -57,8 +57,9 @@
 
   <aside class="index-dna thought-dna" aria-label="Gedanken Navigation">
     <a class="active" href="#gedanken" data-dna-target="gedanken"><span>00</span><b>Gedanken</b></a>
-    <a href="#themen" data-dna-target="themen"><span>01</span><b>Räume</b></a>
-    <a href="#archiv" data-dna-target="archiv"><span>02</span><b>Archiv</b></a>
+    <a href="#neu" data-dna-target="neu"><span>01</span><b>Neu</b></a>
+    <a href="#themen" data-dna-target="themen"><span>02</span><b>Räume</b></a>
+    <a href="#archiv" data-dna-target="archiv"><span>03</span><b>Archiv</b></a>
   </aside>
 
   <main>
@@ -72,14 +73,69 @@
         </h1>
         <p class="scene-lede thought-hero-subline">Nicht darüber,<br>wie man schneller wird.<br><br>Sondern wie man klarer wird.</p>
         <div class="scene-actions">
-          <a class="scene-link" href="#archiv">Archiv betreten</a>
+          <a class="scene-link" href="#neu">Neu veröffentlicht</a>
         </div>
+      </div>
+    </section>
+
+    <section class="scroll-scene dark-scene thought-scene thought-latest-scene" id="neu" data-scene="neu">
+      <div class="thought-section-intro">
+        <div class="scene-index">01 · Zuletzt veröffentlicht</div>
+        <h2 class="scene-title thought-section-title">
+          <span>NEU IM</span>
+          <em>ARCHIV.</em>
+        </h2>
+        <p class="scene-lede">Die jüngsten Texte stehen oben. So sieht man sofort, was neu hinzugekommen ist, ohne erst das gesamte Archiv zu durchsuchen.</p>
+      </div>
+      <div class="thought-latest-list">
+        <a class="thought-latest-item" href="druck-der-moment-in-dem-du-dir-selbst-fehlst.html">
+          <div class="thought-latest-meta">
+            <span>15. Juni 2026</span>
+            <b>Druck</b>
+          </div>
+          <div class="thought-latest-copy">
+            <h3>Der Moment, in dem du dir selbst fehlst.</h3>
+            <p>Über jene leise Entfremdung, die entsteht, wenn der Alltag weiterläuft, aber du selbst darin kaum noch vorkommst.</p>
+          </div>
+          <div class="thought-latest-meta-stack">
+            <span>6 Minuten Lesezeit</span>
+            <b>Neu lesen</b>
+          </div>
+        </a>
+        <a class="thought-latest-item" href="druck-niemand-sieht-den-druck-der-leise-bleibt.html">
+          <div class="thought-latest-meta">
+            <span>12. Juni 2026</span>
+            <b>Druck</b>
+          </div>
+          <div class="thought-latest-copy">
+            <h3>Niemand sieht den Druck, der leise bleibt.</h3>
+            <p>Ein Text über Überforderung ohne Drama, über Lasten ohne Inszenierung und über die Müdigkeit, die ordentlich aussieht.</p>
+          </div>
+          <div class="thought-latest-meta-stack">
+            <span>5 Minuten Lesezeit</span>
+            <b>Neu lesen</b>
+          </div>
+        </a>
+        <a class="thought-latest-item" href="druck-das-leben-nach-der-inneren-alarmbereitschaft.html">
+          <div class="thought-latest-meta">
+            <span>9. Juni 2026</span>
+            <b>Druck</b>
+          </div>
+          <div class="thought-latest-copy">
+            <h3>Das Leben nach der inneren Alarmbereitschaft.</h3>
+            <p>Was geschieht, wenn das Nervensystem nicht mehr auf Gefahr eingestellt sein muss und Stille plötzlich ungewohnt wird.</p>
+          </div>
+          <div class="thought-latest-meta-stack">
+            <span>6 Minuten Lesezeit</span>
+            <b>Neu lesen</b>
+          </div>
+        </a>
       </div>
     </section>
 
     <section class="scroll-scene dark-scene thought-scene thought-themes-scene" id="themen" data-scene="themen">
       <div class="thought-section-intro">
-        <div class="scene-index">01 · Themenräume</div>
+        <div class="scene-index">02 · Themenräume</div>
         <h2 class="scene-title thought-section-title">
           <span>ORIENTIERUNG</span>
           <em>IN THEMENRÄUMEN.</em>
@@ -96,7 +152,7 @@
             <h3>DRUCK</h3>
             <p>Wenn Leistung zur Tarnung wird.</p>
           </div>
-          <a class="scene-link" href="#archiv">Themenraum öffnen</a>
+          <a class="scene-link" href="druck.html">Themenraum öffnen</a>
         </article>
         <article class="thought-theme-room">
           <div class="thought-theme-room-meta">
@@ -147,66 +203,155 @@
 
     <section class="scroll-scene dark-scene thought-scene thought-archive-scene" id="archiv" data-scene="archiv">
       <div class="thought-section-intro">
-        <div class="scene-index">02 · Archiv</div>
+        <div class="scene-index">03 · Archiv</div>
         <h2 class="scene-title thought-section-title">
           <span>ARCHIV.</span>
-          <em>NICHT CONTENT.</em>
+          <em>ZWÖLF TEXTE ÜBER DRUCK.</em>
         </h2>
-        <p class="scene-lede">Eine Bibliothek für Orientierung. Keine Blogkarten. Kein Magazinrhythmus. Nur Texte, die bleiben dürfen.</p>
+        <p class="scene-lede">Ein vollständiger Themenraum. Nicht Beiträge für zwischendurch, sondern zwölf präzise Texte über Leistung, Erschöpfung, Verantwortung, Verfügbarkeit und die Rückkehr zu einem ruhigeren Maßstab.</p>
       </div>
       <div class="thought-archive-list">
-        <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Stille</span>
-          <div class="thought-archive-copy">
-            <h3>Nicht alles,<br>was still ist,<br>ist leer.</h3>
-            <p>Ein Text über Ruhe, die nicht Abwesenheit ist, sondern wieder Kontakt.</p>
-          </div>
-          <div class="thought-archive-meta-stack">
-            <span>5 Minuten Lesezeit</span>
-            <b>Lesen</b>
-          </div>
-        </a>
-        <a class="thought-archive-item" href="#">
+        <a class="thought-archive-item" href="druck-der-moment-in-dem-du-dir-selbst-fehlst.html">
           <span class="archive-meta">Druck</span>
           <div class="thought-archive-copy">
-            <h3>Wenn Funktionieren<br>dein Zuhause wurde.</h3>
-            <p>Warum Stärke manchmal nur eine elegante Form von Erschöpfung gewesen ist.</p>
+            <h3>Der Moment,<br>in dem du dir<br>selbst fehlst.</h3>
+            <p>Über jene Tage, die geordnet aussehen und sich trotzdem so anfühlen, als wärst du darin selbst kaum noch anwesend.</p>
           </div>
           <div class="thought-archive-meta-stack">
-            <span>7 Minuten Lesezeit</span>
-            <b>Lesen</b>
-          </div>
-        </a>
-        <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Grenzen</span>
-          <div class="thought-archive-copy">
-            <h3>Ein Nein,<br>das aus dir kommt.</h3>
-            <p>Über Klarheit, die sich nicht erklären und nicht verhandeln muss.</p>
-          </div>
-          <div class="thought-archive-meta-stack">
-            <span>4 Minuten Lesezeit</span>
-            <b>Lesen</b>
-          </div>
-        </a>
-        <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Rückkehr</span>
-          <div class="thought-archive-copy">
-            <h3>Du brauchst<br>nichts mehr<br>zu werden.</h3>
-            <p>Ein Text über Identität, Verantwortung und die Frage, wie man wieder bei sich landet.</p>
-          </div>
-          <div class="thought-archive-meta-stack">
+            <span class="archive-date">15. Juni 2026</span>
             <span>6 Minuten Lesezeit</span>
             <b>Lesen</b>
           </div>
         </a>
-        <a class="thought-archive-item" href="#">
-          <span class="archive-meta">Mut</span>
+        <a class="thought-archive-item" href="druck-niemand-sieht-den-druck-der-leise-bleibt.html">
+          <span class="archive-meta">Druck</span>
           <div class="thought-archive-copy">
-            <h3>Mut ist nicht laut.<br>Nur entschieden.</h3>
-            <p>Ein Text über Verantwortung, Verlust und die Form von Stärke, die nicht auftritt.</p>
+            <h3>Niemand sieht<br>den Druck,<br>der leise bleibt.</h3>
+            <p>Über Überforderung ohne Zusammenbruch und über die Form von Belastung, die nach außen fast vorbildlich wirkt.</p>
           </div>
           <div class="thought-archive-meta-stack">
+            <span class="archive-date">12. Juni 2026</span>
             <span>5 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-das-leben-nach-der-inneren-alarmbereitschaft.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Das Leben<br>nach der inneren<br>Alarmbereitschaft.</h3>
+            <p>Ein Text über das Fremde an der Entspannung, wenn man lange nur im Modus des Reagierens gelebt hat.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">9. Juni 2026</span>
+            <span>6 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-staerke-als-letzte-verteidigung.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Stärke als<br>letzte<br>Verteidigung.</h3>
+            <p>Warum Härte manchmal nicht Ausdruck von Kraft ist, sondern die letzte Schicht, hinter der Verletzlichkeit noch geschützt wird.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span>6 Minuten Lesezeit</span>
+            <span class="archive-date">6. Juni 2026</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-wenn-verantwortung-zur-selbstvergessenheit-wird.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Wenn Verantwortung<br>zur Selbstvergessenheit<br>wird.</h3>
+            <p>Über die Stelle, an der Verlässlichkeit kippt und aus Fürsorge ein Leben entsteht, in dem du selbst kaum noch vorkommst.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">3. Juni 2026</span>
+            <span>7 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-die-angst-nicht-mehr-zu-genuegen.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Die Angst,<br>nicht mehr<br>zu genügen.</h3>
+            <p>Ein Text über den inneren Maßstab, der immer weiterwandert und selbst echte Leistung kaum noch ankommen lässt.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">31. Mai 2026</span>
+            <span>6 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-warum-ruhe-sich-zuerst-falsch-anfuehlt.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Warum Ruhe<br>sich zuerst falsch<br>anfühlt.</h3>
+            <p>Über das Misstrauen gegenüber Langsamkeit, wenn der Körper lange gelernt hat, Anspannung mit Sicherheit zu verwechseln.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">28. Mai 2026</span>
+            <span>5 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-der-preis-immer-verfuegbar-zu-sein.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Der Preis,<br>immer verfügbar<br>zu sein.</h3>
+            <p>Ein Text über offene Schleifen, ständige Erreichbarkeit und darüber, wie Zerstreuung langsam jede innere Schwelle abträgt.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">24. Mai 2026</span>
+            <span>5 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-wer-du-bist-wenn-niemand-etwas-braucht.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Wer du bist,<br>wenn niemand<br>etwas braucht.</h3>
+            <p>Über Identität jenseits von Nützlichkeit und die unbequeme Leere, die entsteht, wenn der Auftrag plötzlich wegfällt.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">20. Mai 2026</span>
+            <span>6 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-die-hoeflichkeit-der-erschoepfung.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Die Höflichkeit<br>der<br>Erschöpfung.</h3>
+            <p>Ein Text über jene feine, sozial verträgliche Müdigkeit, die niemand stört und deshalb oft zu lange unbemerkt bleibt.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">16. Mai 2026</span>
+            <span>5 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-wenn-funktionieren-dein-zuhause-wurde.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Wenn Funktionieren<br>dein Zuhause<br>wurde.</h3>
+            <p>Über die Gewohnheit, sich nur noch in Aufgaben wiederzufinden und Nähe zur eigenen Person erst nach getaner Arbeit zu erlauben.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">12. Mai 2026</span>
+            <span>6 Minuten Lesezeit</span>
+            <b>Lesen</b>
+          </div>
+        </a>
+        <a class="thought-archive-item" href="druck-wenn-leistung-zur-tarnung-wird.html">
+          <span class="archive-meta">Druck</span>
+          <div class="thought-archive-copy">
+            <h3>Wenn Leistung<br>zur Tarnung<br>wird.</h3>
+            <p>Ein Text über Druck, Funktionieren und die stille Erschöpfung hinter verlässlicher Leistung.</p>
+          </div>
+          <div class="thought-archive-meta-stack">
+            <span class="archive-date">8. Mai 2026</span>
+            <span>7 Minuten Lesezeit</span>
             <b>Lesen</b>
           </div>
         </a>
