@@ -4126,9 +4126,9 @@ keine abgeschnittenen Textspalten.
 
 .thought-topic-page .nav{
   border-bottom-color:rgba(244,240,232,.08);
-  background:rgba(7,8,8,.72);
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
+  background:rgba(7,8,8,.58);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
 }
 
 .thought-topic-page .nav-mark,
@@ -4160,18 +4160,19 @@ keine abgeschnittenen Textspalten.
 }
 
 .thought-topic-page .nav-dropdown summary{
-  color:rgba(244,240,232,.88);
-  border-color:rgba(244,240,232,.28);
-  background:rgba(7,8,8,.88);
+  color:rgba(244,240,232,.9);
+  border-color:rgba(244,240,232,.32);
+  background:rgba(7,8,8,.72);
 }
 
 .thought-topic-page .mobile-menu{
-  background:#070808;
+  background:rgba(7,8,8,.96);
+  border-color:rgba(244,240,232,.12);
 }
 
 .thought-topic-page .mobile-menu a{
-  color:var(--paper);
-  border-bottom-color:rgba(244,240,232,.12);
+  color:rgba(244,240,232,.86);
+  border-bottom-color:rgba(244,240,232,.1);
 }
 
 .thought-topic-backdrop{
@@ -4450,9 +4451,9 @@ keine abgeschnittenen Textspalten.
 
 .thought-frame-page .nav{
   border-bottom-color:rgba(244,240,232,.08);
-  background:rgba(7,8,8,.72);
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
+  background:rgba(7,8,8,.58);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
 }
 
 .thought-frame-page .mark-symbol{
@@ -4484,18 +4485,19 @@ keine abgeschnittenen Textspalten.
 }
 
 .thought-frame-page .nav-dropdown summary{
-  color:rgba(244,240,232,.88);
-  border-color:rgba(244,240,232,.28);
-  background:rgba(7,8,8,.88);
+  color:rgba(244,240,232,.9);
+  border-color:rgba(244,240,232,.32);
+  background:rgba(7,8,8,.72);
 }
 
 .thought-frame-page .mobile-menu{
-  background:#070808;
+  background:rgba(7,8,8,.96);
+  border-color:rgba(244,240,232,.12);
 }
 
 .thought-frame-page .mobile-menu a{
-  color:var(--paper);
-  border-bottom-color:rgba(244,240,232,.12);
+  color:rgba(244,240,232,.86);
+  border-bottom-color:rgba(244,240,232,.1);
 }
 
 .thought-frame-page .index-dna.thought-dna{
@@ -4510,32 +4512,36 @@ keine abgeschnittenen Textspalten.
 }
 
 .thought-frame-page .index-dna.thought-dna a{
-  border-color:rgba(244,240,232,.1);
-  background:rgba(7,8,8,.3);
+  color:rgba(244,240,232,.38);
 }
 
 .thought-frame-page .index-dna.thought-dna a span{
-  color:rgba(244,240,232,.42);
+  color:rgba(244,240,232,.38);
 }
 
 .thought-frame-page .index-dna.thought-dna a b{
-  color:rgba(244,240,232,.6);
+  opacity:0;
+  transform:translateX(8px);
+  color:rgba(244,240,232,.9);
 }
 
 .thought-frame-page .index-dna.thought-dna a:hover,
 .thought-frame-page .index-dna.thought-dna a.active{
-  border-color:rgba(244,240,232,.18);
-  background:rgba(7,8,8,.58);
+  color:rgba(244,240,232,.9);
+  transform:translateX(-4px);
 }
 
 .thought-frame-page .index-dna.thought-dna a:hover span,
 .thought-frame-page .index-dna.thought-dna a.active span{
-  color:rgba(244,240,232,.84);
+  color:#080908;
+  border-color:rgba(244,240,232,.86);
+  background:rgba(244,240,232,.86);
 }
 
 .thought-frame-page .index-dna.thought-dna a:hover b,
 .thought-frame-page .index-dna.thought-dna a.active b{
-  color:rgba(244,240,232,.9);
+  opacity:1;
+  transform:translateX(0);
 }
 
 .thought-letter-card{
@@ -4856,9 +4862,9 @@ keine abgeschnittenen Textspalten.
 
 .thought-article-page .nav{
   border-bottom-color:rgba(244,240,232,.08);
-  background:rgba(7,8,8,.72);
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
+  background:rgba(7,8,8,.58);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
 }
 
 .thought-article-page .mark-symbol{
@@ -4890,18 +4896,19 @@ keine abgeschnittenen Textspalten.
 }
 
 .thought-article-page .nav-dropdown summary{
-  color:rgba(244,240,232,.88);
-  border-color:rgba(244,240,232,.28);
-  background:rgba(7,8,8,.88);
+  color:rgba(244,240,232,.9);
+  border-color:rgba(244,240,232,.32);
+  background:rgba(7,8,8,.72);
 }
 
 .thought-article-page .mobile-menu{
-  background:#070808;
+  background:rgba(7,8,8,.96);
+  border-color:rgba(244,240,232,.12);
 }
 
 .thought-article-page .mobile-menu a{
-  color:var(--paper);
-  border-bottom-color:rgba(244,240,232,.12);
+  color:rgba(244,240,232,.86);
+  border-bottom-color:rgba(244,240,232,.1);
 }
 
 .thought-article-main{
