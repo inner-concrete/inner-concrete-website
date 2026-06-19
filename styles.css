@@ -4840,7 +4840,8 @@ keine abgeschnittenen Textspalten.
   .thought-topic-page .nav,
   .thought-article-page .nav,
   .index-frame-page .nav,
-  .meditation-frame-page .nav{
+  .meditation-frame-page .nav,
+  .manifest-page .nav{
     z-index:1500 !important;
   }
 
@@ -4849,7 +4850,8 @@ keine abgeschnittenen Textspalten.
   .thought-topic-page .nav-dropdown,
   .thought-article-page .nav-dropdown,
   .index-frame-page .nav-dropdown,
-  .meditation-frame-page .nav-dropdown{
+  .meditation-frame-page .nav-dropdown,
+  .manifest-page .nav-dropdown{
     z-index:1600 !important;
   }
 
@@ -4858,7 +4860,8 @@ keine abgeschnittenen Textspalten.
   .thought-topic-page .mobile-menu,
   .thought-article-page .mobile-menu,
   .index-frame-page .mobile-menu,
-  .meditation-frame-page .mobile-menu{
+  .meditation-frame-page .mobile-menu,
+  .manifest-page .mobile-menu{
     z-index:1700 !important;
   }
 }

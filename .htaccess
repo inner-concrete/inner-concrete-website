@@ -1,0 +1,26 @@
+# INNER CONCRETE — Server-Konfiguration
+
+# 404-Fehler beheben: /das-buch.html → /buch.html
+Redirect 301 /das-buch.html https://www.innerconcrete.com/buch.html
+
+# Kompression aktivieren (GZIP) für schnellere Ladezeit
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript
+</IfModule>
+
+# Browser-Caching für statische Assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# HTTPS-Redirect (falls noch nicht aktiv)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
