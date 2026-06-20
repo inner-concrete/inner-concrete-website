@@ -49,10 +49,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=66" />
+  <link rel="stylesheet" href="styles.css?v=68" />
 </head>
 <body class="manifest-page">
   <div class="manifest-backdrop" aria-hidden="true"></div>
+  <div class="manifest-progress" id="manifestProgress" aria-hidden="true"></div>
 
   <nav class="nav">
     <div class="nav-inner">
@@ -65,7 +66,7 @@
         <a href="gedanken.html">Gedanken</a>
         <a href="shop.html">Shop</a>
       </div>
-      <div class="nav-action"><span class="nav-note">Haltung · Ruhe · Klarheit</span><a class="pill" href="#manifest-text">Lesen</a></div>
+      <div class="nav-action"><span class="nav-note">Haltung · Ruhe · Klarheit</span><a class="pill" href="#manifest-scenes">Lesen</a></div>
     </div>
     <details class="nav-dropdown">
       <summary>Menü</summary>
@@ -80,187 +81,184 @@
     </details>
   </nav>
 
-  <main class="manifest-main">
-    <section class="manifest-section manifest-hero is-visible">
-      <span class="manifest-kicker">INNER CONCRETE / MANIFEST</span>
-      <div class="manifest-hero-grid">
-        <div class="manifest-hero-copy">
-          <h1 class="manifest-title">
-            <span>DIE WELT</span>
-            <span>WIRD LAUTER.</span>
-            <em>NICHT WIR.</em>
-          </h1>
+  <main class="manifest-film">
+    <section class="manifest-prologue manifest-sequence" data-sequence-path="assets/manifest/hero/frames" data-frame-count="193">
+      <div class="manifest-prologue-stage">
+        <div class="manifest-sequence-media" aria-hidden="true">
+          <img src="assets/manifest/hero/frames/0001.jpg" alt="" decoding="async" fetchpriority="high" />
         </div>
-        <div class="manifest-hero-intro">
-          <p class="manifest-lede">Ein Manifest für innere Stabilität in einer Zeit permanenter Ablenkung.</p>
-          <div class="manifest-value-list" aria-label="Kernbegriffe">
+        <div class="manifest-prologue-inner">
+          <span class="manifest-prologue-kicker">INNER CONCRETE / Manifest 1.0</span>
+          <h1 class="manifest-prologue-title">
+            DIE WELT
+            <br />
+            WIRD LAUTER.
+            <em>Nicht wir.</em>
+          </h1>
+          <p class="manifest-prologue-lede">Das Manifest soll nicht zuerst erklärt werden. Es soll zuerst gespürt werden.</p>
+          <div class="manifest-prologue-values" aria-label="Kernbegriffe">
             <span>Ruhe</span>
             <span>Klarheit</span>
             <span>Stabilität</span>
           </div>
-          <div class="manifest-hero-actions">
-            <a class="btn primary" href="#manifest-text">Manifest lesen</a>
-            <a class="btn secondary" href="#manifest-paths">In das System</a>
+          <div class="manifest-prologue-actions">
+            <a class="btn primary" href="#manifest-scenes">Manifest erleben</a>
+            <a class="btn secondary" href="#manifest-ways">In das System</a>
           </div>
+        </div>
+        <div class="manifest-prologue-scroll" aria-hidden="true">
+          <span>Scrollen</span>
+          <svg width="1" height="32" viewBox="0 0 1 32"><line x1="0.5" y1="0" x2="0.5" y2="32" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"></line></svg>
         </div>
       </div>
     </section>
 
-    <section class="manifest-section" id="manifest-text">
-      <div class="manifest-copy-head">
-        <span class="manifest-mini-heading">INNER CONCRETE</span>
-        <h2>Manifest 1.0</h2>
-      </div>
-
-      <div class="manifest-prose">
-        <article class="manifest-block">
-          <span class="manifest-block-index">01</span>
-          <div class="manifest-block-body">
-            <p>Wir leben in einer Zeit permanenter Beschleunigung.</p>
-            <p>Mehr Informationen.</p>
-            <p>Mehr Meinungen.</p>
-            <p>Mehr Ablenkungen.</p>
-            <p>Mehr Möglichkeiten.</p>
-            <p>Und dennoch scheint vielen Menschen genau das zu fehlen, was sie eigentlich suchen:</p>
-            <p>Orientierung.</p>
-            <p>INNER CONCRETE entstand nicht aus dem Wunsch, etwas Neues zu erschaffen.</p>
-            <p>Es entstand aus dem Bedürfnis, etwas Wesentliches wiederzufinden.</p>
-            <p>Ruhe.</p>
-            <p>Klarheit.</p>
-            <p>Stabilität.</p>
-            <p>Nicht als Rückzug von der Welt.</p>
-            <p>Sondern als Grundlage, um ihr bewusst zu begegnen.</p>
+    <section class="manifest-scenes" id="manifest-scenes" aria-label="Manifest-Szenen">
+      <section class="manifest-scene manifest-sequence" data-scene="01" data-sequence-path="assets/manifest/01/frames" data-frame-count="148">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/01/frames/0001.jpg" alt="" decoding="async" />
           </div>
-        </article>
-
-        <article class="manifest-block">
-          <span class="manifest-block-index">02</span>
-          <div class="manifest-block-body">
-            <p>Die moderne Welt belohnt Geschwindigkeit.</p>
-            <p>INNER CONCRETE interessiert sich für Tiefe.</p>
-            <p>Die moderne Welt belohnt Lautstärke.</p>
-            <p>INNER CONCRETE interessiert sich für Substanz.</p>
-            <p>Die moderne Welt belohnt Aufmerksamkeit.</p>
-            <p>INNER CONCRETE interessiert sich für Bewusstsein.</p>
-            <p>Wir glauben nicht, dass jedes Problem gelöst werden muss.</p>
-            <p>Nicht jede Leere muss gefüllt werden.</p>
-            <p>Nicht jeder Moment muss produktiv sein.</p>
-            <p>Nicht jeder Weg muss geplant sein.</p>
-            <p>Manche Antworten entstehen erst, wenn man aufhört, ständig nach ihnen zu suchen.</p>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">01 · Die Beschleunigung</span>
+            <h2 class="manifest-scene-title">ORIENTIERUNG FEHLT.</h2>
+            <p class="manifest-scene-text">Mehr Informationen. Mehr Meinungen. Mehr Ablenkungen. Und dennoch genau dort ein Mangel, wo Menschen Halt suchen.</p>
           </div>
-        </article>
+        </div>
+      </section>
 
-        <article class="manifest-block">
-          <span class="manifest-block-index">03</span>
-          <div class="manifest-block-body">
-            <p>INNER CONCRETE ist keine Methode.</p>
-            <p>Kein Trend.</p>
-            <p>Keine Optimierungsstrategie.</p>
-            <p>Es gibt keine zehn Schritte zur Erleuchtung.</p>
-            <p>Keine Garantie auf Glück.</p>
-            <p>Keine Abkürzung.</p>
-            <p>Es gibt nur die tägliche Praxis, zurückzukehren.</p>
-            <p>Zur eigenen Aufmerksamkeit.</p>
-            <p>Zur eigenen Verantwortung.</p>
-            <p>Zur eigenen Haltung.</p>
+      <section class="manifest-scene manifest-sequence" data-scene="02" data-sequence-path="assets/manifest/02/frames" data-frame-count="193">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/02/frames/0001.jpg" alt="" decoding="async" />
           </div>
-        </article>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">02 · Tiefe statt Geschwindigkeit</span>
+            <h2 class="manifest-scene-title">NICHT TEMPO.
+              <br />TIEFE.</h2>
+            <p class="manifest-scene-text">Die moderne Welt belohnt Lautstärke. INNER CONCRETE interessiert sich für Substanz, Bewusstsein und die Würde des Ungeplanten.</p>
+          </div>
+        </div>
+      </section>
 
-        <article class="manifest-block">
-          <span class="manifest-block-index">04</span>
-          <div class="manifest-block-body">
-            <p>Stärke bedeutet für uns nicht Kontrolle.</p>
-            <p>Stärke bedeutet, sich selbst nicht zu verlieren.</p>
-            <p>Nicht in Krisen.</p>
-            <p>Nicht in Erfolg.</p>
-            <p>Nicht im Lärm.</p>
-            <p>Nicht in der Stille.</p>
-            <p>Wer innerlich stabil ist, muss nicht ständig beweisen, wer er ist.</p>
+      <section class="manifest-scene manifest-sequence" data-scene="03" data-sequence-path="assets/manifest/03/frames" data-frame-count="193">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/03/frames/0001.jpg" alt="" decoding="async" />
           </div>
-        </article>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">03 · Keine Methode</span>
+            <h2 class="manifest-scene-title">KEINE METHODE.
+              <br />KEINE ABKÜRZUNG.</h2>
+            <p class="manifest-scene-text">Kein Trend. Keine Optimierungsstrategie. Nur die tägliche Praxis, zur eigenen Aufmerksamkeit, Verantwortung und Haltung zurückzukehren.</p>
+          </div>
+        </div>
+      </section>
 
-        <article class="manifest-block">
-          <span class="manifest-block-index">05</span>
-          <div class="manifest-block-body">
-            <p>Freiheit beginnt nicht an einem Ort.</p>
-            <p>Nicht in einem Land.</p>
-            <p>Nicht in einem Beruf.</p>
-            <p>Nicht in einem Konto.</p>
-            <p>Freiheit beginnt dort, wo äußere Umstände nicht länger über den eigenen inneren Zustand bestimmen.</p>
-            <p>Deshalb ist INNER CONCRETE kein Ziel.</p>
-            <p>Es ist ein Weg.</p>
-            <p>Ein Weg, der nie abgeschlossen ist.</p>
+      <section class="manifest-scene manifest-sequence" data-scene="04" data-sequence-path="assets/manifest/04/frames" data-frame-count="119">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/04/frames/0001.jpg" alt="" decoding="async" />
           </div>
-        </article>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">04 · Sich nicht verlieren</span>
+            <h2 class="manifest-scene-title">STÄRKE HEISST,
+              <br />DICH NICHT ZU VERLIEREN.</h2>
+            <p class="manifest-scene-text">Nicht in Krisen. Nicht im Erfolg. Nicht im Lärm. Nicht in der Stille.</p>
+          </div>
+        </div>
+      </section>
 
-        <article class="manifest-block">
-          <span class="manifest-block-index">06</span>
-          <div class="manifest-block-body">
-            <p>Das Buch ist eine Verdichtung dieses Weges.</p>
-            <p>Die Meditationen sind seine Praxis.</p>
-            <p>Die Gedanken sind seine Sprache.</p>
-            <p>Das Archiv wird sein Gedächtnis.</p>
-            <p>Alles gehört zusammen.</p>
-            <p>Nichts steht für sich allein.</p>
+      <section class="manifest-scene manifest-sequence" data-scene="05" data-sequence-path="assets/manifest/05/frames" data-frame-count="193">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/05/frames/0001.jpg" alt="" decoding="async" />
           </div>
-        </article>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">05 · Freiheit beginnt innen</span>
+            <h2 class="manifest-scene-title">FREIHEIT BEGINNT
+              <br />IM INNEREN.</h2>
+            <p class="manifest-scene-text">Nicht an einem Ort. Nicht in einem Beruf. Sondern dort, wo äußere Umstände nicht länger den inneren Zustand regieren.</p>
+          </div>
+        </div>
+      </section>
 
-        <article class="manifest-block">
-          <span class="manifest-block-index">07</span>
-          <div class="manifest-block-body">
-            <p>Wir glauben an wenige Dinge.</p>
-            <p>An Verantwortung.</p>
-            <p>An Präsenz.</p>
-            <p>An Klarheit.</p>
-            <p>An Tiefe.</p>
-            <p>An die Kraft von Stille.</p>
-            <p>Wir glauben, dass ein Mensch nicht alles kontrollieren muss, um stabil zu sein.</p>
-            <p>Und dass Orientierung nicht entsteht, indem man immer mehr sucht.</p>
-            <p>Sondern indem man lernt, bewusster zu sehen.</p>
+      <section class="manifest-scene manifest-sequence" data-scene="06" data-sequence-path="assets/manifest/06/frames" data-frame-count="193">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/06/frames/0001.jpg" alt="" decoding="async" />
           </div>
-        </article>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">06 · Alles gehört zusammen</span>
+            <h2 class="manifest-scene-title">NICHTS STEHT
+              <br />FÜR SICH ALLEIN.</h2>
+            <p class="manifest-scene-text">Das Buch ist Verdichtung. Die Meditationen sind Praxis. Die Gedanken sind Sprache. Das Archiv wird Gedächtnis.</p>
+          </div>
+        </div>
+      </section>
 
-        <article class="manifest-block">
-          <span class="manifest-block-index">08</span>
-          <div class="manifest-block-body">
-            <p>INNER CONCRETE ist kein Ort der Perfektion.</p>
-            <p>Es ist ein Ort der Rückkehr.</p>
-            <p>Zurück zu dem, was trägt.</p>
-            <p>Zurück zu dem, was bleibt.</p>
-            <p>Zurück zu dem, was auch dann noch Bestand hat, wenn vieles andere verschwindet.</p>
-            <p>Nicht perfekt.</p>
-            <p>Aber stabil.</p>
+      <section class="manifest-scene manifest-sequence" data-scene="07" data-sequence-path="assets/manifest/07/frames" data-frame-count="193">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/07/frames/0001.jpg" alt="" decoding="async" />
           </div>
-        </article>
-      </div>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">07 · An wenige Dinge glauben</span>
+            <h2 class="manifest-scene-title">VERANTWORTUNG.
+              <br />PRÄSENZ.
+              <br />KLARHEIT.</h2>
+            <p class="manifest-scene-text">Orientierung entsteht nicht, indem man immer mehr sucht. Sondern indem man lernt, bewusster zu sehen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifest-scene manifest-sequence" data-scene="08" data-sequence-path="assets/manifest/08/frames" data-frame-count="186">
+        <div class="manifest-scene-frame">
+          <div class="manifest-sequence-media" aria-hidden="true">
+            <img src="assets/manifest/08/frames/0001.jpg" alt="" decoding="async" />
+          </div>
+          <div class="manifest-scene-copy">
+            <span class="manifest-scene-index">08 · Ein Ort der Rückkehr</span>
+            <h2 class="manifest-scene-title">NICHT PERFEKT.
+              <br />ABER STABIL.</h2>
+            <p class="manifest-scene-text">INNER CONCRETE ist kein Ort der Perfektion. Es ist ein Ort der Rückkehr. Zu dem, was trägt. Zu dem, was bleibt.</p>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="manifest-section" id="manifest-paths">
-      <div class="manifest-links-head">
-        <span class="manifest-mini-heading">Weiter in das System</span>
-        <h2>Verdichtung. Erfahrung. Sprache.</h2>
-        <p>Das Manifest steht nicht für sich allein. Es führt weiter in Werk, Praxis und Denken.</p>
-      </div>
-
-      <div class="manifest-link-stack">
-        <a class="manifest-link-row" href="buch.html">
-          <span class="manifest-link-meta">01 · Verdichtung</span>
-          <div class="manifest-link-title">Das Buch</div>
-          <div class="manifest-link-copy">Die verdichtete Form des Weges. Zwölf Spuren, ein Werk, eine ruhige Ordnung.</div>
-          <span class="manifest-link-arrow">Buch öffnen</span>
-        </a>
-        <a class="manifest-link-row" href="meditationen.html">
-          <span class="manifest-link-meta">02 · Erfahrung</span>
-          <div class="manifest-link-title">Meditationen</div>
-          <div class="manifest-link-copy">Die Praxis der Rückkehr. Stimme, Atem, Boden und eine Form von Stille, die trägt.</div>
-          <span class="manifest-link-arrow">Meditationen öffnen</span>
-        </a>
-        <a class="manifest-link-row" href="gedanken.html">
-          <span class="manifest-link-meta">03 · Sprache</span>
-          <div class="manifest-link-title">Gedanken</div>
-          <div class="manifest-link-copy">Texte über Druck, Würde, Grenzen, Stille und Rückkehr. Nicht Content. Orientierung.</div>
-          <span class="manifest-link-arrow">Gedanken öffnen</span>
-        </a>
+    <section class="manifest-coda manifest-sequence" id="manifest-ways" data-sequence-path="assets/manifest/system/frames" data-frame-count="130">
+      <div class="manifest-coda-stage">
+        <div class="manifest-sequence-media" aria-hidden="true">
+          <img src="assets/manifest/system/frames/0001.jpg" alt="" decoding="async" />
+        </div>
+        <div class="manifest-coda-shell">
+          <div class="manifest-coda-head">
+            <span class="manifest-coda-kicker">Weiter in das System</span>
+            <h2>Verdichtung. Erfahrung. Sprache.</h2>
+            <p>Das Manifest endet nicht in Worten. Es führt weiter in Werk, Praxis und Denken.</p>
+          </div>
+          <div class="manifest-coda-grid">
+            <a class="manifest-coda-card" href="buch.html">
+              <span class="manifest-coda-meta">01 · Verdichtung</span>
+              <h3>Das Buch</h3>
+              <p>Die verdichtete Form des Weges. Zwölf Spuren, ein Werk, eine ruhige Ordnung.</p>
+              <span class="manifest-coda-link">Buch öffnen</span>
+            </a>
+            <a class="manifest-coda-card" href="meditationen.html">
+              <span class="manifest-coda-meta">02 · Erfahrung</span>
+              <h3>Meditationen</h3>
+              <p>Die Praxis der Rückkehr. Stimme, Atem, Boden und eine Form von Stille, die trägt.</p>
+              <span class="manifest-coda-link">Meditationen öffnen</span>
+            </a>
+            <a class="manifest-coda-card" href="gedanken.html">
+              <span class="manifest-coda-meta">03 · Sprache</span>
+              <h3>Gedanken</h3>
+              <p>Texte über Druck, Würde, Grenzen, Stille und Rückkehr. Nicht Content. Orientierung.</p>
+              <span class="manifest-coda-link">Gedanken öffnen</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -274,6 +272,101 @@
     </div>
     <div class="ft-bottom"><span>© 2026 INNER CONCRETE</span><span>Riss · Tritt · Stein</span><span>Stille Stärke im Lärm</span></div>
   </footer>
+
+  <script>
+    (function () {
+      const sequences = Array.from(document.querySelectorAll(".manifest-sequence")).map((section) => {
+        const frame = section.querySelector(".manifest-sequence-media img");
+        const frameCount = Number(section.dataset.frameCount || 1);
+        const basePath = section.dataset.sequencePath || "";
+        return {
+          section,
+          frame,
+          frameCount,
+          basePath,
+          currentFrame: 1,
+          preloaded: new Set([1])
+        };
+      });
+
+      let ticking = false;
+
+      const frameSrc = (basePath, index) => `${basePath}/${String(index).padStart(4, "0")}.jpg`;
+
+      const preloadFrame = (sequence, index) => {
+        if (!index || index < 1 || index > sequence.frameCount || sequence.preloaded.has(index)) return;
+        sequence.preloaded.add(index);
+        const img = new Image();
+        img.src = frameSrc(sequence.basePath, index);
+      };
+
+      const warmFrames = (sequence, center) => {
+        [-12, -6, -3, 3, 6, 12, 24].forEach((offset) => preloadFrame(sequence, center + offset));
+        preloadFrame(sequence, 1);
+        preloadFrame(sequence, sequence.frameCount);
+      };
+
+      const updateManifestSequences = () => {
+        const viewport = window.innerHeight || 1;
+        const scrollTop = window.scrollY || 0;
+        const maxScroll = Math.max(1, document.documentElement.scrollHeight - viewport);
+        const pageProgress = Math.min(1, Math.max(0, scrollTop / maxScroll));
+
+        document.documentElement.style.setProperty("--manifest-progress", pageProgress.toFixed(4));
+
+        sequences.forEach((sequence) => {
+          const rect = sequence.section.getBoundingClientRect();
+          if (rect.bottom < -viewport * 0.2 || rect.top > viewport * 1.2) return;
+
+          const raw = (viewport - rect.top) / (viewport + rect.height);
+          const progress = Math.min(1, Math.max(0, raw));
+          const nextFrame = Math.min(sequence.frameCount, Math.max(1, Math.round(progress * (sequence.frameCount - 1)) + 1));
+
+          if (sequence.frame && nextFrame !== sequence.currentFrame) {
+            sequence.currentFrame = nextFrame;
+            sequence.frame.src = frameSrc(sequence.basePath, nextFrame);
+            warmFrames(sequence, nextFrame);
+          }
+        });
+
+        ticking = false;
+      };
+
+      const requestManifestUpdate = () => {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(updateManifestSequences);
+        }
+      };
+
+      window.addEventListener("scroll", requestManifestUpdate, { passive: true });
+      window.addEventListener("resize", requestManifestUpdate);
+
+      sequences.forEach((sequence) => warmFrames(sequence, 1));
+      updateManifestSequences();
+    })();
+
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-active");
+        } else {
+          entry.target.classList.remove("is-active");
+        }
+      });
+    }, { threshold: 0.35, rootMargin: "0px 0px -12% 0px" });
+
+    document.querySelectorAll(".manifest-scene").forEach((scene) => revealObs.observe(scene));
+
+    const progressEl = document.getElementById("manifestProgress");
+    window.addEventListener("scroll", () => {
+      if (!progressEl) return;
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressEl.style.width = `${progress}%`;
+    }, { passive: true });
+  </script>
 
 </body>
 </html>
