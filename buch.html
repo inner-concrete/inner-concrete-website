@@ -269,6 +269,7 @@
     const bookFrameStage = document.querySelector('.book-frame-stage');
     const bookFrame = document.getElementById('bookFrame');
     const bookFrameCount = Number(bookFrameStage?.dataset.frameCount || 300);
+    const bookFrameStride = bookFrameCount > 160 ? 2 : 1;
     const bookDNALinks = document.querySelectorAll('.book-dna a');
     let bookTicking = false;
     let currentBookFrame = 1;
@@ -280,13 +281,20 @@
       if (!index || index < 1 || index > bookFrameCount || preloadedBookFrames.has(index)) return;
       preloadedBookFrames.add(index);
       const img = new Image();
+      img.decoding = 'async';
       img.src = bookFrameSrc(index);
     };
 
     const warmBookFrames = (center) => {
-      [-10, -6, -3, 3, 6, 10, 18, 32].forEach((offset) => preloadBookFrame(center + offset));
+      [-2, -1, 1, 2, 4].forEach((offset) => preloadBookFrame(center + offset));
       preloadBookFrame(1);
       preloadBookFrame(bookFrameCount);
+    };
+
+    const snapBookFrame = (progress) => {
+      const rawFrame = Math.min(bookFrameCount, Math.max(1, Math.round(progress * (bookFrameCount - 1)) + 1));
+      const snappedFrame = 1 + Math.round((rawFrame - 1) / bookFrameStride) * bookFrameStride;
+      return Math.min(bookFrameCount, Math.max(1, snappedFrame));
     };
 
     const setActiveBookDNA = () => {
@@ -308,7 +316,7 @@
       const y = window.scrollY || 0;
       const maxScroll = Math.max(1, document.documentElement.scrollHeight - viewport);
       const pageProgress = Math.min(1, Math.max(0, y / maxScroll));
-      const nextFrame = Math.min(bookFrameCount, Math.max(1, Math.round(pageProgress * (bookFrameCount - 1)) + 1));
+      const nextFrame = snapBookFrame(pageProgress);
 
       document.documentElement.style.setProperty('--index-progress', pageProgress.toFixed(4));
       document.documentElement.style.setProperty('--scroll-y', `${y * 0.02}px`);

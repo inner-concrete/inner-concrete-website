@@ -290,6 +290,7 @@
       });
 
       let ticking = false;
+      const manifestStride = 2;
 
       const frameSrc = (basePath, index) => `${basePath}/${String(index).padStart(4, "0")}.webp`;
 
@@ -297,13 +298,20 @@
         if (!index || index < 1 || index > sequence.frameCount || sequence.preloaded.has(index)) return;
         sequence.preloaded.add(index);
         const img = new Image();
+        img.decoding = "async";
         img.src = frameSrc(sequence.basePath, index);
       };
 
       const warmFrames = (sequence, center) => {
-        [-12, -6, -3, 3, 6, 12, 24].forEach((offset) => preloadFrame(sequence, center + offset));
+        [-2, -1, 1, 2, 4].forEach((offset) => preloadFrame(sequence, center + offset));
         preloadFrame(sequence, 1);
         preloadFrame(sequence, sequence.frameCount);
+      };
+
+      const snapManifestFrame = (sequence, progress) => {
+        const rawFrame = Math.min(sequence.frameCount, Math.max(1, Math.round(progress * (sequence.frameCount - 1)) + 1));
+        const snappedFrame = 1 + Math.round((rawFrame - 1) / manifestStride) * manifestStride;
+        return Math.min(sequence.frameCount, Math.max(1, snappedFrame));
       };
 
       const updateManifestSequences = () => {
@@ -320,7 +328,7 @@
 
           const raw = (viewport - rect.top) / (viewport + rect.height);
           const progress = Math.min(1, Math.max(0, raw));
-          const nextFrame = Math.min(sequence.frameCount, Math.max(1, Math.round(progress * (sequence.frameCount - 1)) + 1));
+          const nextFrame = snapManifestFrame(sequence, progress);
 
           if (sequence.frame && nextFrame !== sequence.currentFrame) {
             sequence.currentFrame = nextFrame;
