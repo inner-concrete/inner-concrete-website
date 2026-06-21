@@ -64,11 +64,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=66" />
+  <link rel="stylesheet" href="styles.css?v=70" />
 </head>
 <body class="index-frame-page">
   <div class="index-frame-stage" aria-hidden="true" data-frame-count="192">
-    <img id="indexFrame" src="assets/index/frames/index-0001.jpg" alt="INNER CONCRETE — Betonarchitektur als Symbol für stille Stärke" decoding="async" fetchpriority="high" />
+    <img id="indexFrame" src="assets/index/frames/index-0001.webp" alt="INNER CONCRETE — Betonarchitektur als Symbol für stille Stärke" decoding="async" fetchpriority="high" />
   </div>
   <nav class="nav">
     <div class="nav-inner">
@@ -244,7 +244,7 @@
     let currentFrame = 1;
     const preloaded = new Set();
 
-    const frameSrc = (index) => `assets/index/frames/index-${String(index).padStart(4, '0')}.jpg`;
+    const frameSrc = (index) => `assets/index/frames/index-${String(index).padStart(4, '0')}.webp`;
 
     const preloadFrame = (index) => {
       if (!index || index < 1 || index > frameCount || preloaded.has(index)) return;

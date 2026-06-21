@@ -42,11 +42,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=66" />
+  <link rel="stylesheet" href="styles.css?v=70" />
 </head>
 <body class="thought-frame-page">
   <div class="thought-frame-stage" aria-hidden="true" data-frame-count="181">
-    <img id="thoughtFrame" src="assets/gedanken/frames/ezgif-frame-001.jpg" alt="INNER CONCRETE Gedanken — Archivraum mit Stein und Beton" decoding="async" fetchpriority="high" />
+    <img id="thoughtFrame" src="assets/gedanken/frames/ezgif-frame-001.webp" alt="INNER CONCRETE Gedanken — Archivraum mit Stein und Beton" decoding="async" fetchpriority="high" />
     <div class="thought-room">
       <div class="thought-vignette"></div>
       <div class="thought-beam beam-a"></div>
@@ -418,7 +418,7 @@
       let currentFrame = 1;
       const preloaded = new Set();
 
-      const thoughtFrameSrc = (index) => `assets/gedanken/frames/ezgif-frame-${String(index).padStart(3, '0')}.jpg`;
+      const thoughtFrameSrc = (index) => `assets/gedanken/frames/ezgif-frame-${String(index).padStart(3, '0')}.webp`;
 
       const preloadFrame = (index) => {
         if (!index || index < 1 || index > thoughtFrameCount || preloaded.has(index)) return;

@@ -44,11 +44,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=66" />
+  <link rel="stylesheet" href="styles.css?v=70" />
 </head>
 <body class="meditation-frame-page">
   <div class="meditation-frame-stage" aria-hidden="true" data-frame-count="240">
-    <img id="meditationFrame" src="assets/meditationen/frames/frame-001.jpg" alt="INNER CONCRETE Meditationen — Stille und Betonlandschaft" decoding="async" fetchpriority="high" />
+    <img id="meditationFrame" src="assets/meditationen/frames/frame-001.webp" alt="INNER CONCRETE Meditationen — Stille und Betonlandschaft" decoding="async" fetchpriority="high" />
   </div>
 
   <nav class="nav">
@@ -193,7 +193,7 @@
     let meditationTicking = false;
     const meditationPreloaded = new Set();
 
-    const meditationFrameSrc = (index) => `assets/meditationen/frames/frame-${String(index).padStart(3, '0')}.jpg`;
+    const meditationFrameSrc = (index) => `assets/meditationen/frames/frame-${String(index).padStart(3, '0')}.webp`;
 
     function preloadMeditationFrame(index) {
       if (!index || index < 1 || index > meditationFrameCount || meditationPreloaded.has(index)) return;
