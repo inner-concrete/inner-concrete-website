@@ -3,19 +3,23 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.innerconcrete.com/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.innerconcrete.com/assets/index/frames/index-0001.webp</image:loc>
-      <image:title>INNER CONCRETE — Stille Stärke</image:title>
+      <image:loc>https://www.innerconcrete.com/assets/manifest/hero/frames/0001.webp</image:loc>
+      <image:title>INNER CONCRETE — Manifest</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.innerconcrete.com/manifest.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://www.innerconcrete.com/der-weg.html</loc>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.innerconcrete.com/assets/index/frames/index-0001.webp</image:loc>
+      <image:title>INNER CONCRETE — Der Weg</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.innerconcrete.com/buch.html</loc>
